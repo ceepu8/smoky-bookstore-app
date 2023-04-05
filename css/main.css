@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: #ffffff;
+}
+
+textarea,
+input {
+  border: none;
+  width: 100%;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+button {
+  border: none;
+}
+
+#header {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+#header .container {
+  width: 100%;
+}
+#header .container .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .container .content .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header .container .content .logo #logo-img {
+  max-width: 50px;
+  height: 50px;
+  margin: 12px;
+}
+#header .container .content .logo h1 {
+  font-size: 24px;
+  color: #62ab00;
+}
+#header .container .content .search-bar {
+  display: flex;
+  align-items: center;
+  max-width: 570px;
+  width: 100%;
+  position: relative;
+}
+#header .container .content .search-bar form {
+  width: 100%;
+  padding: 0px 8px;
+  border: 1px solid #b8b8b8;
+  border-radius: 4px;
+  height: 50px;
+}
+#header .container .content .search-bar form #headerSearchInput {
+  font-size: 16px;
+  width: 100%;
+  height: 48px;
+}
+#header .container .content .search-bar .search-icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 90px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #62ab00;
+  color: #ffffff;
+  border-radius: 0px 4px 4px 0px;
+  transition: 0.3s all;
+}
+#header .container .content .search-bar .search-icon:hover {
+  background-color: #333333;
+}
+#header .container .content .navigation {
+  display: flex;
+  align-items: center;
+  gap: 0 24px;
+  color: #202226;
+}
+#header .container .content .navigation .shopping {
+  display: flex;
+  align-items: center;
+  gap: 0px 8px;
+}
+#header .container .content .navigation .shopping .cart {
+  font-size: 18px;
+  position: relative;
+}
+#header .container .content .navigation .shopping .cart .cart-number {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 12px;
+  color: #ffffff;
+  background-color: #62ab00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -18px;
+  right: -9px;
+}
+#header .container .content .navigation .settings {
+  font-size: 18px;
+}/*# sourceMappingURL=main.css.map */

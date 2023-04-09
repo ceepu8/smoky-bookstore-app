@@ -13,10 +13,14 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header id="header">
-      <div class="container">
+    <header
+      id="header"
+      class="shadow-lg flex flex-col align-center space-y-2 py-2 fixed w-full z-[99999]"
+    >
+      <div class="container max-w-[1280px] mx-auto">
         <div class="content">
           <div class="logo">
             <img src="./assets/logo.png" id="logo-img" />
@@ -51,6 +55,79 @@
           </div>
         </div>
       </div>
+      <div class="w-full h-[0.5px] bg-gray-200"></div>
+      <div class="menu py-2">
+        <nav>
+          <ul class="flex space-x-12 justify-center">
+            <li
+              class="border-b-transparent border-solid border-b-[1px] transition-all hover:border-b-black"
+            >
+              <a href="#">Home</a>
+            </li>
+            <li
+              class="border-b-transparent border-solid border-b-[1px] transition-all hover:border-b-black"
+            >
+              <a href="#">Contact</a>
+            </li>
+            <li
+              class="border-b-transparent border-solid border-b-[1px] transition-all hover:border-b-black"
+            >
+              <a href="#">About</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
+
+    <section id="carousel">
+      <div class="slides">
+        <img
+          src="https://i.loli.net/2020/01/20/2wx8npJFiDUzu4T.png"
+          alt="Stainless Steel"
+        />
+        <img
+          src="https://i.loli.net/2020/01/20/YWA6RhCcESgN3Ty.png"
+          alt="Army Green"
+        />
+        <img
+          src="https://i.loli.net/2020/01/19/4HaLyI7NQRf3teO.png"
+          alt="Cranberry"
+        />
+        <img
+          src="https://i.loli.net/2020/01/19/QVY6JSEbqiOvAp1.png"
+          alt="Midnight Blue"
+        />
+      </div>
+      <div class="overlays">
+        <div class="bar" style="--bar-color: #bdc3c7"></div>
+        <div class="bar" style="--bar-color: #218c74"></div>
+        <div class="bar" style="--bar-color: #dd6b7b"></div>
+        <div class="bar" style="--bar-color: #30465c"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#" class="nav-link">Stainless Steel</a></li>
+        <li><a href="#" class="nav-link">Army Green</a></li>
+        <li><a href="#" class="nav-link">Cranberry</a></li>
+        <li><a href="#" class="nav-link">Midnight Blue</a></li>
+      </ul>
+    </section>
+
+    <section id="best-seller">
+      <div class="container">
+        <div class="carousel">
+          <div class="carousel__face"><span>This is something</span></div>
+          <div class="carousel__face"><span>Very special</span></div>
+          <div class="carousel__face"><span>Special is the key</span></div>
+          <div class="carousel__face"><span>For you</span></div>
+          <div class="carousel__face"><span>Just give it</span></div>
+          <div class="carousel__face"><span>A try</span></div>
+          <div class="carousel__face"><span>And see</span></div>
+          <div class="carousel__face"><span>How IT Works</span></div>
+          <div class="carousel__face"><span>Woow</span></div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/carousel.js"></script>
   </body>
 </html>

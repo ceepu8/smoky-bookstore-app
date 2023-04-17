@@ -1,5 +1,5 @@
 let navLinks = document.querySelectorAll("#carousel .nav-link");
-let slides = document.querySelectorAll("#carousel .slides img");
+let slides = document.querySelectorAll("#carousel .slides .slide-item");
 let overlays = document.querySelectorAll("#carousel .bar");
 let maxZIndex = navLinks.length;
 let easeInOutQuart = "cubic-bezier(0.77, 0, 0.175, 1)";
@@ -12,8 +12,9 @@ navLinks.forEach((navLink, activeIndex) => {
     navLinks.forEach((navLink) => navLink.classList.remove("active"));
     navLink.classList.add("active");
     // slide
-    let currentSlide = document.querySelector("#carousel .slides img.active");
-    console.log(currentSlide);
+    let currentSlide = document.querySelector(
+      "#carousel .slides .slide-item.active"
+    );
     let slideFadeOut = currentSlide.animate(
       [
         { transform: "translateX(0)", opacity: 1 },

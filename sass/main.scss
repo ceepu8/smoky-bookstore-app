@@ -8,4 +8,8 @@
 @import "./layouts/carousel";
 @import "./layouts/services";
 @import "./layouts/promotion";
+@import "./layouts/client";
 @import "./layouts/best-seller";
+
+// Override Library
+@import "./override-library/splide";

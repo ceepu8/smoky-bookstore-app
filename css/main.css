@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +8,7 @@
 html,
 body {
   margin: 0 auto;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
   background-color: #ffffff;
 }
 
@@ -216,9 +217,20 @@ a {
     transform: rotate(0deg) scale(1);
   }
 }
+#promotion {
+  margin-bottom: 84px;
+}
 #promotion .banner-list {
   color: white;
   min-height: 240px;
+}
+
+#client {
+  background-image: url(../assets/client-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 84px;
 }
 
 #best-seller {
@@ -389,4 +401,96 @@ a {
   to {
     transform: rotateY(-360deg);
   }
+}
+
+.splide.service .splide__arrow {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  opacity: 0.7;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+  border: 1px solid #c2c2c2;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s;
+}
+.splide.service .splide__arrow svg {
+  fill: none;
+  height: 24px;
+  width: 24px;
+  color: #212121;
+}
+.splide.service .splide__arrow:hover {
+  border-color: #f44244;
+}
+.splide.service .splide__arrow:hover svg {
+  color: #f44244;
+}
+.splide.service .splide__arrow--prev {
+  left: 0;
+  transform: translateY(-50%) translateX(20px);
+}
+.splide.service .splide__arrow--next {
+  right: 0;
+  transform: translateY(-50%) translateX(-20px);
+}
+.splide.service:hover .splide__arrow {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-50%) translateX(0px);
+}
+
+#client .splide .splide__arrow {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  opacity: 0.7;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  background-color: #ffffff;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s;
+}
+#client .splide .splide__arrow svg {
+  fill: none;
+  height: 24px;
+  width: 24px;
+  color: #212121;
+}
+#client .splide .splide__arrow:hover {
+  background-color: #f44244;
+}
+#client .splide .splide__arrow:hover svg {
+  color: #ffffff;
+}
+#client .splide .splide__arrow--prev {
+  left: -48px;
+  transform: translateY(-50%) translateX(20px);
+}
+#client .splide .splide__arrow--next {
+  right: -48px;
+  transform: translateY(-50%) translateX(-20px);
+}
+#client .splide:hover .splide__arrow {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-50%) translateX(0px);
 }/*# sourceMappingURL=main.css.map */

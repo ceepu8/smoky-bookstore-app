@@ -12,6 +12,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/main.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
@@ -160,64 +168,121 @@
     </section>
 
     <section id="services">
-      <div class="container max-w-[1200px] mx-auto">
-        <div class="service-list flex items-center justify-between space-x-10">
-          <div class="service-item flex items-center space-x-6">
-            <img
-              class="icon max-w-[100px]"
-              alt="icon-1"
-              src="./assets/icon-1.png"
-            />
-            <div class="flex flex-col">
-              <h2 class="text-lg">Quick Delivery</h2>
-              <div class="max-w-full h-[1px] rounded-md bg-black my-2"></div>
-              <p class="text-sm text-gray-500">
-                Most product are free shipping.
-              </p>
-            </div>
+      <div class="container max-w-[1280px] mx-auto">
+        <div class="splide service group">
+          <div class="splide__arrows">
+            <button class="splide__arrow splide__arrow--prev">
+              <i data-feather="chevron-right"></i>
+            </button>
+            <button class="splide__arrow splide__arrow--next">
+              <i data-feather="chevron-right"></i>
+            </button>
           </div>
-
-          <div class="service-item flex items-center space-x-6">
-            <img
-              class="icon max-w-[100px]"
-              alt="icon-1"
-              src="./assets/icon-2.png"
-            />
-            <div class="flex flex-col">
-              <h2 class="text-lg">Pay with Easy</h2>
-              <div class="max-w-full h-[1px] rounded-md bg-black my-2"></div>
-              <p class="text-sm text-gray-500">
-                Most product are free shipping.
-              </p>
-            </div>
-          </div>
-          <div class="service-item flex items-center space-x-6">
-            <img
-              class="icon max-w-[100px]"
-              alt="icon-1"
-              src="./assets/icon-3.png"
-            />
-            <div class="flex flex-col">
-              <h2 class="text-lg">Best Deal</h2>
-              <div class="max-w-full h-[1px] rounded-md bg-black my-2"></div>
-              <p class="text-sm text-gray-500">
-                Most product are free shipping.
-              </p>
-            </div>
-          </div>
-          <div class="service-item flex items-center space-x-6">
-            <img
-              class="icon max-w-[80px]"
-              alt="icon-1"
-              src="./assets/icon-4.png"
-            />
-            <div class="flex flex-col">
-              <h2 class="text-lg">Secured Payment</h2>
-              <div class="max-w-full h-[1px] rounded-md bg-black my-2"></div>
-              <p class="text-sm text-gray-500">
-                Most product are free shipping.
-              </p>
-            </div>
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide px-4" style="width: 20%">
+                <div
+                  class="bg-[#f5fdff] h-full flex flex-col justify-center space-y-6 p-6 hover:shadow"
+                >
+                  <a href="#" tabindex="0"
+                    ><img
+                      class="max-w-[75px]"
+                      src="./assets/icons/children.svg"
+                      alt="children"
+                    />
+                  </a>
+                  <div>
+                    <h2 class="text-xl font-medium">Children</h2>
+                    <p>Special Collections</p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide px-4" style="width: 20%">
+                <div
+                  class="bg-[#faf1ff] h-full flex flex-col justify-center space-y-6 p-6 hover:shadow"
+                >
+                  <a href="#" tabindex="0">
+                    <img
+                      class="max-w-[75px]"
+                      src="./assets/icons/photography.svg"
+                      alt="photography"
+                    />
+                  </a>
+                  <div>
+                    <h2 class="text-xl font-medium">Photography</h2>
+                    <p>Special Collections</p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide px-4" style="width: 20%">
+                <div
+                  class="bg-[#faf4eb] h-full flex flex-col justify-center space-y-6 p-6 hover:shadow"
+                >
+                  <a href="#" tabindex="0">
+                    <img
+                      class="max-w-[75px]"
+                      src="./assets/icons/food-and-drink.svg"
+                      alt="photography"
+                    />
+                  </a>
+                  <div>
+                    <h2 class="text-xl font-medium">Food & Drink</h2>
+                    <p>Special Collections</p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide px-4" style="width: 20%">
+                <div
+                  class="bg-[#e6f2f4] h-full flex flex-col justify-center space-y-6 p-6 hover:shadow"
+                >
+                  <a href="#" tabindex="0">
+                    <img
+                      class="max-w-[75px]"
+                      src="./assets/icons/health.svg"
+                      alt="photography"
+                    />
+                  </a>
+                  <div>
+                    <h2 class="text-xl font-medium">Health</h2>
+                    <p>Special Collections</p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide px-4" style="width: 20%">
+                <div
+                  class="bg-[#f4e6e5] h-full flex flex-col justify-center space-y-6 p-6 hover:shadow"
+                >
+                  <a href="#" tabindex="0">
+                    <img
+                      class="max-w-[75px]"
+                      src="./assets/icons/romance.svg"
+                      alt="photography"
+                    />
+                  </a>
+                  <div>
+                    <h2 class="text-xl font-medium">Romance</h2>
+                    <p>Special Collections</p>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide px-4" style="width: 20%">
+                <div
+                  class="bg-[#f3fdec] h-full flex flex-col justify-center space-y-6 p-6 hover:shadow"
+                >
+                  <a href="#" tabindex="0">
+                    <img
+                      class="max-w-[75px]"
+                      src="./assets/icons/biography.svg"
+                      alt="photography"
+                    />
+                  </a>
+                  <div>
+                    <h2 class="text-xl font-medium">Biography</h2>
+                    <p>Special Collections</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -227,7 +292,7 @@
       <div class="container max-w-[1200px] mx-auto">
         <div class="banner-list grid grid-cols-2 gap-8">
           <div
-            class="banner-item relative group overflow-hidden transition-all"
+            class="animate__animated animate__bounceInLeft duration-700 banner-item relative group overflow-hidden transition-all"
           >
             <a href="#">
               <img
@@ -242,12 +307,14 @@
               </div>
             </a>
           </div>
-          <div class="banner-item relative">
+          <div
+            class="animate__animated animate__bounceInRight duration-700 banner-item relative group overflow-hidden transition-all"
+          >
             <a href="#">
               <img
                 src="../assets/promo-banner-2.webp"
                 alt="promo banner 2"
-                class="w-full"
+                class="w-full group-hover:scale-110 transition-all duration-400"
               />
               <div class="absolute top-0 left-0 p-8">
                 <p class="text-xl">BLACK FRIDAY</p>
@@ -260,7 +327,72 @@
       </div>
     </section>
 
-    <section id="best-seller">
+    <section id="client">
+      <div class="container max-w-[1280px] mx-auto">
+        <div
+          class="flex flex-col justify-center items-center space-y-12 py-32 px-24 text-white"
+        >
+          <div>
+            <h2 class="text-4xl font-medium">What Client Says</h2>
+            <p>Contrary to popular belief Lorem Ipsum.</p>
+          </div>
+          <div
+            class="splide"
+            role="group"
+            aria-label="Splide Basic HTML Example"
+          >
+            <div class="splide__arrows">
+              <button class="splide__arrow splide__arrow--prev">
+                <i data-feather="chevron-right"></i>
+              </button>
+              <button class="splide__arrow splide__arrow--next">
+                <i data-feather="chevron-right"></i>
+              </button>
+            </div>
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div
+                    class="flex flex-col text-center items-center justify-center space-y-8"
+                  >
+                    <img src="./assets/avatar-1.webp" alt="avatar 1" />
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Aliquam doloremque, earum minima sapiente explicabo
+                      facilis exercitationem voluptatum reiciendis molestiae
+                      deleniti rerum voluptas quas? Tempora quidem velit unde
+                      cum omnis consequatur, sed quia voluptatum. Iusto, iure
+                      enim voluptates cumque eaque dolor maxime velit! Odio,
+                      aliquam. Odio.
+                    </p>
+                    <p class="uppercase font-semibold">Hester Perkins</p>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div
+                    class="flex flex-col text-center items-center justify-center space-y-8"
+                  >
+                    <img src="./assets/avatar-2.avif" alt="avatar 2" />
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Aliquam doloremque, earum minima sapiente explicabo
+                      facilis exercitationem voluptatum reiciendis molestiae
+                      deleniti rerum voluptas quas? Tempora quidem velit unde
+                      cum omnis consequatur, sed quia voluptatum. Iusto, iure
+                      enim voluptates cumque eaque dolor maxime velit! Odio,
+                      aliquam. Odio.
+                    </p>
+                    <p class="uppercase font-semibold">Hester Perkins</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section id="best-seller">
       <div class="container">
         <div class="carousel">
           <div class="carousel__face"><span>This is something</span></div>
@@ -274,8 +406,15 @@
           <div class="carousel__face"><span>Woow</span></div>
         </div>
       </div>
-    </section>
+    </section> -->
 
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      feather.replace();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="./js/services.js"></script>
     <script src="./js/carousel.js"></script>
+    <script src="./js/client.js"></script>
   </body>
 </html>

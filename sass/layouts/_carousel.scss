@@ -9,19 +9,18 @@
 
 #carousel {
   position: relative;
-  padding: calc(147.5px + 104px) 0px 0px;
+  padding: calc(147.5px + 84px) 0px 0px;
   display: flex;
+  margin-bottom: 84px;
 
   .slides {
     position: absolute;
-    bottom: -10%;
-    left: 40%;
-    transform: translateX(-40%);
+    bottom: -5%;
+    left: 10%;
     z-index: 9999;
 
-    img {
-      width: 450px;
-      height: 450px;
+    .slide-item {
+      // width: 100%;
       display: none;
 
       &.active {
@@ -34,7 +33,7 @@
   .overlays {
     position: relative;
     width: 75%;
-    max-width: 800px;
+    max-width: 1000px;
     height: 320px;
 
     .bar {

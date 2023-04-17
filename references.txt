@@ -1,3 +1,4 @@
 
 1. 3D Carousel: https://codepen.io/claudiulazar/pen/OdvVOo
 2. https://codepen.io/alphardex/pen/dyPQyKY
+3. animation: https://css-tricks.com/snippets/css/shake-css-keyframe-animation/

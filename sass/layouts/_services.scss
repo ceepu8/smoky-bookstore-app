@@ -1,0 +1,29 @@
+#services {
+  margin-bottom: 84px;
+  .service-list {
+    .service-item {
+      cursor: pointer;
+      &:hover .icon {
+        animation: shake 0.15s 4;
+      }
+    }
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(5deg) scale(1.1);
+  }
+  50% {
+    transform: rotate(0deg) scale(1.2);
+  }
+  75% {
+    transform: rotate(-5deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}

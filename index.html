@@ -20,7 +20,7 @@
       id="header"
       class="shadow-lg flex flex-col align-center space-y-2 py-2 fixed w-full z-[99999]"
     >
-      <div class="container max-w-[1280px] mx-auto">
+      <div class="container max-w-[1200px] mx-auto">
         <div class="content">
           <div class="logo">
             <img src="./assets/logo.png" id="logo-img" />
@@ -81,35 +81,183 @@
 
     <section id="carousel">
       <div class="slides">
-        <img
-          src="https://i.loli.net/2020/01/20/2wx8npJFiDUzu4T.png"
-          alt="Stainless Steel"
-        />
-        <img
-          src="https://i.loli.net/2020/01/20/YWA6RhCcESgN3Ty.png"
-          alt="Army Green"
-        />
-        <img
-          src="https://i.loli.net/2020/01/19/4HaLyI7NQRf3teO.png"
-          alt="Cranberry"
-        />
-        <img
-          src="https://i.loli.net/2020/01/19/QVY6JSEbqiOvAp1.png"
-          alt="Midnight Blue"
-        />
+        <div class="slide-item">
+          <div class="flex items-center justify-between space-x-8">
+            <img src="./assets//book-1.avif" alt="Stainless Steel" />
+            <div class="flex flex-col items-start space-y-2 text-white">
+              <h2 class="text-4xl">A New World</h2>
+              <span class="text-2xl">Author: Julojulo Vondos</span>
+              <span class="text-xl">$75.00</span>
+              <button
+                class="border-solid border-[2px] border-white px-8 py-4 uppercase"
+              >
+                Shop now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-item">
+          <div class="flex items-center justify-between space-x-8">
+            <img src="./assets//book-2.avif" alt="Army Green" />
+            <div class="flex flex-col items-start space-y-2 text-white">
+              <h2 class="text-4xl">Jungle Life</h2>
+              <span class="text-2xl">Author: Julojulo Vondos</span>
+              <span class="text-xl">$75.00</span>
+              <button
+                class="border-solid border-[2px] border-white px-8 py-4 uppercase"
+              >
+                Shop now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-item">
+          <div class="flex items-center justify-between space-x-8">
+            <img src="./assets//book-3.avif" alt="Cranberry" />
+            <div class="flex flex-col items-start space-y-2 text-white">
+              <h2 class="text-4xl">Jungle Life</h2>
+              <span class="text-2xl">Author: Julojulo Vondos</span>
+              <span class="text-xl">$75.00</span>
+              <button
+                class="border-solid border-[2px] border-white px-8 py-4 uppercase"
+              >
+                Shop now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-item">
+          <div class="flex items-center justify-between space-x-8">
+            <img src="./assets//book-4.avif" alt="Midnight Blue" />
+            <div class="flex flex-col items-start space-y-2 text-white">
+              <h2 class="text-4xl">Jungle Life</h2>
+              <span class="text-2xl">Author: Julojulo Vondos</span>
+              <span class="text-xl">$75.00</span>
+              <button
+                class="border-solid border-[2px] border-white px-8 py-4 uppercase"
+              >
+                Shop now
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="overlays">
-        <div class="bar" style="--bar-color: #bdc3c7"></div>
-        <div class="bar" style="--bar-color: #218c74"></div>
-        <div class="bar" style="--bar-color: #dd6b7b"></div>
-        <div class="bar" style="--bar-color: #30465c"></div>
+        <div class="bar" style="--bar-color: #6183a1"></div>
+        <div class="bar" style="--bar-color: #78797d"></div>
+        <div class="bar" style="--bar-color: #56838b"></div>
+        <div class="bar" style="--bar-color: #aaa9a0"></div>
       </div>
       <ul class="nav-links">
-        <li><a href="#" class="nav-link">Stainless Steel</a></li>
-        <li><a href="#" class="nav-link">Army Green</a></li>
-        <li><a href="#" class="nav-link">Cranberry</a></li>
-        <li><a href="#" class="nav-link">Midnight Blue</a></li>
+        <li><a href="#" class="nav-link">A New World</a></li>
+        <li><a href="#" class="nav-link">Jungle Life</a></li>
+        <li><a href="#" class="nav-link">Yoga Lesson</a></li>
+        <li><a href="#" class="nav-link">Heaven of life</a></li>
       </ul>
+    </section>
+
+    <section id="services">
+      <div class="container max-w-[1200px] mx-auto">
+        <div class="service-list flex items-center justify-between space-x-10">
+          <div class="service-item flex items-center space-x-6">
+            <img
+              class="icon max-w-[100px]"
+              alt="icon-1"
+              src="./assets/icon-1.png"
+            />
+            <div class="flex flex-col">
+              <h2 class="text-lg">Quick Delivery</h2>
+              <div class="max-w-full h-[1px] rounded-md bg-black my-2"></div>
+              <p class="text-sm text-gray-500">
+                Most product are free shipping.
+              </p>
+            </div>
+          </div>
+
+          <div class="service-item flex items-center space-x-6">
+            <img
+              class="icon max-w-[100px]"
+              alt="icon-1"
+              src="./assets/icon-2.png"
+            />
+            <div class="flex flex-col">
+              <h2 class="text-lg">Pay with Easy</h2>
+              <div class="max-w-full h-[1px] rounded-md bg-black my-2"></div>
+              <p class="text-sm text-gray-500">
+                Most product are free shipping.
+              </p>
+            </div>
+          </div>
+          <div class="service-item flex items-center space-x-6">
+            <img
+              class="icon max-w-[100px]"
+              alt="icon-1"
+              src="./assets/icon-3.png"
+            />
+            <div class="flex flex-col">
+              <h2 class="text-lg">Best Deal</h2>
+              <div class="max-w-full h-[1px] rounded-md bg-black my-2"></div>
+              <p class="text-sm text-gray-500">
+                Most product are free shipping.
+              </p>
+            </div>
+          </div>
+          <div class="service-item flex items-center space-x-6">
+            <img
+              class="icon max-w-[80px]"
+              alt="icon-1"
+              src="./assets/icon-4.png"
+            />
+            <div class="flex flex-col">
+              <h2 class="text-lg">Secured Payment</h2>
+              <div class="max-w-full h-[1px] rounded-md bg-black my-2"></div>
+              <p class="text-sm text-gray-500">
+                Most product are free shipping.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="promotion">
+      <div class="container max-w-[1200px] mx-auto">
+        <div class="banner-list grid grid-cols-2 gap-8">
+          <div
+            class="banner-item relative group overflow-hidden transition-all"
+          >
+            <a href="#">
+              <img
+                src="../assets/promo-banner-1.webp"
+                alt="promo banner 2"
+                class="w-full group-hover:scale-110 transition-all duration-400"
+              />
+              <div class="absolute top-0 left-0 p-8">
+                <p class="text-xl">BLACK FRIDAY</p>
+                <h2 class="text-4xl semibold">Wall Lighting Black.</h2>
+                <span href="#" class="underline text-sm">SHOP NOW</span>
+              </div>
+            </a>
+          </div>
+          <div class="banner-item relative">
+            <a href="#">
+              <img
+                src="../assets/promo-banner-2.webp"
+                alt="promo banner 2"
+                class="w-full"
+              />
+              <div class="absolute top-0 left-0 p-8">
+                <p class="text-xl">BLACK FRIDAY</p>
+                <h2 class="text-4xl semibold">Wall Lighting Black.</h2>
+                <span href="#" class="underline text-sm">SHOP NOW</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="best-seller">

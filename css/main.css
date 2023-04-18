@@ -38,6 +38,13 @@ a {
   color: inherit;
 }
 
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 #header {
   background-color: #ffffff;
 }
@@ -230,6 +237,10 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  margin-bottom: 84px;
+}
+
+#blog {
   margin-bottom: 84px;
 }
 

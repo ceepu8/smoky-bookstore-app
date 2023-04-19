@@ -29,7 +29,7 @@
       id="header"
       class="shadow-lg flex flex-col align-center space-y-2 py-2 fixed w-full z-[99999]"
     >
-      <div class="container max-w-[1200px] mx-auto">
+      <div class="container max-w-[1280px] mx-auto">
         <div class="content">
           <div class="logo">
             <img src="./assets/logo.png" id="logo-img" />
@@ -289,8 +289,23 @@
       </div>
     </section>
 
+    <section id="collections">
+      <div class="container max-w-[1280px] mx-auto">
+        <div
+          class="flex flex-col justify-center items-center space-y-12 text-black"
+        >
+          <div class="text-center">
+            <h2 class="text-4xl font-medium">Popular Collections</h2>
+            <p>Contrary to popular belief Lorem Ipsum.</p>
+          </div>
+          <div class="collection-tabs flex gap-x-6"></div>
+          <div class="product-list"></div>
+        </div>
+      </div>
+    </section>
+
     <section id="promotion">
-      <div class="container max-w-[1200px] mx-auto">
+      <div class="container max-w-[1280px] mx-auto">
         <div class="banner-list grid grid-cols-2 gap-8">
           <div
             class="animate__animated animate__bounceInLeft duration-700 banner-item relative group overflow-hidden transition-all"
@@ -420,7 +435,7 @@
               <span class="text-gray-500 font-light text-sm"
                 >24 July, 2022 \ 2 comments</span
               >
-              <p class="text-sm text-gray-700 line-clamp">
+              <p class="text-sm text-gray-700 line-clamp-3">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Repellendus laudantium expedita suscipit temporibus numquam.
                 Quos incidunt aspernatur veritatis sequi provident neque
@@ -451,7 +466,7 @@
               <span class="text-gray-500 font-light text-sm"
                 >24 July, 2022 \ 2 comments</span
               >
-              <p class="text-sm transition-all text-gray-700 line-clamp">
+              <p class="text-sm transition-all text-gray-700 line-clamp-3">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Repellendus laudantium expedita suscipit temporibus numquam.
                 Quos incidunt aspernatur veritatis sequi provident neque
@@ -482,7 +497,7 @@
               <span class="text-gray-500 font-light text-sm"
                 >24 July, 2022 \ 2 comments</span
               >
-              <p class="text-sm text-gray-700 line-clamp">
+              <p class="text-sm text-gray-700 line-clamp-3">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Repellendus laudantium expedita suscipit temporibus numquam.
                 Quos incidunt aspernatur veritatis sequi provident neque
@@ -618,8 +633,9 @@
       feather.replace();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <script src="./js/services.js"></script>
-    <script src="./js/carousel.js"></script>
-    <script src="./js/client.js"></script>
+    <script type="module" src="./js/services.js"></script>
+    <script type="module" src="./js/carousel.js"></script>
+    <script type="module" src="./js/client.js"></script>
+    <script type="module" src="./js/index.js"></script>
   </body>
 </html>

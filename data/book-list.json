@@ -1,0 +1,466 @@
+[
+    {
+        "id": 1,
+        "author": "F. Scott Fitzgerald.",
+        "name": "The Great Gatsby",
+        "price": 10,
+        "image": "https://www.oldcastlebooks.co.uk/images/large/9780857304568.jpg",
+        "rating": 4.5,
+        "description": "A classic novel about the decadence of the Jazz Age in America.",
+        "released_date": "10/04/1925",
+        "status": "feature",
+        "genre": "Fiction, Drama",
+        "comments": [
+            {
+                "name": "Alice",
+                "comment": "I love this book! It's a timeless classic.",
+                "rating": 5
+            },
+            {
+                "name": "Bob",
+                "comment": "Great book, but I didn't like the ending.",
+                "rating": 4
+            },
+            {
+                "name": "Charlie",
+                "comment": "This book is overrated.",
+                "rating": 3
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "1984",
+        "author": "George Orwell",
+        "price": 12,
+        "image": "https://qph.cf2.quoracdn.net/main-qimg-db3e75729b79933b7ce321a9331e287b-lq",
+        "rating": 4,
+        "description": "A dystopian novel about a totalitarian government controlling every aspect of people's lives.",
+        "released_date": "08/06/1949",
+        "status": "feature",
+        "genre": "Fiction, Science Fiction",
+        "comments": [
+            {
+                "name": "Dave",
+                "comment": "This book is a warning against authoritarianism.",
+                "rating": 5
+            },
+            {
+                "name": "Emma",
+                "comment": "A powerful book, but very depressing.",
+                "rating": 4
+            },
+            {
+                "name": "Frank",
+                "comment": "I didn't like the writing style.",
+                "rating": 3
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "The Catcher in the Rye",
+        "author": "J.D.Salinger",
+        "price": 8,
+        "image": "https://m.media-amazon.com/images/I/61fgOuZfBGL._AC_UF1000,1000_QL80_.jpg",
+        "rating": 3.5,
+        "description": "A coming-of-age novel about a teenage boy who is disillusioned with the world around him.",
+        "released_date": "16/07/1951",
+        "status": "bestseller",
+        "genre": "Fiction, Bildungsroman",
+        "comments": [
+            {
+                "name": "Grace",
+                "comment": "I love this book! It's so relatable.",
+                "rating": 5
+            },
+            {
+                "name": "Harry",
+                "comment": "Holden Caulfield is a whiny brat.",
+                "rating": 2
+            },
+            {
+                "name": "Isabelle",
+                "comment": "This book is a classic, but it hasn't aged well.",
+                "rating": 4
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "price": 9,
+        "image": "https://cdn.britannica.com/21/182021-050-666DB6B1/book-cover-To-Kill-a-Mockingbird-many-1961.jpg",
+        "rating": 4.8,
+        "description": "A novel about racial injustice and the loss of innocence in a small Southern town.",
+        "released_date": "11/07/1960",
+        "status": "feature",
+        "genre": "Fiction, Southern Gothic",
+        "comments": [
+            {
+                "name": "John",
+                "comment": "This is one of the greatest books of all time.",
+                "rating": 5
+            },
+            {
+                "name": "Karen",
+                "comment": "A beautiful and powerful book.",
+                "rating": 5
+            },
+            {
+                "name": "Liam",
+                "comment": "I don't understand why this book is so famous.",
+                "rating": 3
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "The Wind-Up Bird Chronicle",
+        "author": "Haruki Murakami",
+        "price": 15,
+        "image": "https://salt.tikicdn.com/cache/w1200/media/catalog/product/i/m/img070_3_5.jpg",
+        "rating": 4.2,
+        "description": "A surreal novel about a man searching for his missing wife and dealing with strange events in his life.",
+        "released_date": "12/06/1994",
+        "status": "bestseller",
+        "genre": "Fiction, Surrealism, Magic Realism",
+        "comments": [
+            {
+                "name": "Maria",
+                "comment": "This is my favorite book of all time.",
+                "rating": 5
+            },
+            {
+                "name": "Nate",
+                "comment": "I love Murakami's writing style, but this book is a bit too weird for me.",
+                "rating": 3
+            },
+            {
+                "name": "Olivia",
+                "comment": "I didn't understand everything in this book, but it was still very interesting.",
+                "rating": 4
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Norwegian Wood",
+        "author": "Haruki Murakami",
+        "price": 11,
+        "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1630460042i/11297.jpg",
+        "rating": 4,
+        "description": "A novel about love, loss, and growing up in 1960s Tokyo.",
+        "released_date": "20/06/1987",
+        "status": "bestseller",
+        "genre": "Fiction, Romance",
+        "comments": [
+            {
+                "name": "Peter",
+                "comment": "This is one of Murakami's best books.",
+                "rating": 5
+            },
+            {
+                "name": "Rachel",
+                "comment": "A beautiful and melancholic book.",
+                "rating": 4
+            },
+            {
+                "name": "Sam",
+                "comment": "I didn't like the characters in this book.",
+                "rating": 2
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "The Hobbit",
+        "author": "J.R.R.Tolkien",
+        "price": 10,
+        "image": "https://www.pluggedin.com/wp-content/uploads/2020/01/hobbit-cover.jpg",
+        "rating": 4.6,
+        "description": "A classic children's novel about a hobbit who goes on an adventure with dwarves to reclaim their treasure from a dragon.",
+        "released_date": "21/09/1937",
+        "status": "latest",
+        "genre": "Fiction, Fantasy",
+        "comments": [
+            {
+                "name": "Sophie",
+                "comment": "One of the best children's books ever written.",
+                "rating": 5
+            },
+            {
+                "name": "Jack",
+                "comment": "I love the world-building in this book.",
+                "rating": 4
+            },
+            {
+                "name": "Emma",
+                "comment": "This is a great book for kids, but I didn't enjoy it as an adult.",
+                "rating": 3
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Kafka on the Shore",
+        "author": "Haruki Murakami",
+        "price": 14,
+        "image": "https://m.media-amazon.com/images/I/81zvseHim4L._AC_UF1000,1000_QL80_.jpg",
+        "rating": 4.3,
+        "description": "A surreal novel about a teenage boy who runs away from home and a man who can talk to cats.",
+        "released_date": "12/01/2002",
+        "status": "feature",
+        "genre": "Fiction, Surrealism, Magical Realism",
+        "comments": [
+            {
+                "name": "Avery",
+                "comment": "This book blew my mind. Murakami is a genius.",
+                "rating": 5
+            },
+            {
+                "name": "Leah",
+                "comment": "I didn't understand everything in this book, but I still loved it.",
+                "rating": 4
+            },
+            {
+                "name": "Max",
+                "comment": "This book was too weird for me.",
+                "rating": 2
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "name": "One Hundred Years of Solitude",
+        "author": "Gabriel Garcia Marquez",
+        "price": 13,
+        "image": "https://m.media-amazon.com/images/I/81MI6+TpYkL._AC_UF1000,1000_QL80_.jpg",
+        "rating": 4.5,
+        "description": "A novel about the history of the Buendía family and the town of Macondo, spanning over a century.",
+        "released_date": "30/05/1967",
+        "status": "latest",
+        "genre": "Fiction, Magic Realism",
+        "comments": [
+            {
+                "name": "Jacob",
+                "comment": "This book is a masterpiece.",
+                "rating": 5
+            },
+            {
+                "name": "Emily",
+                "comment": "I love the magical elements in this book.",
+                "rating": 4
+            },
+            {
+                "name": "Lila",
+                "comment": "This book was a bit confusing at times, but still worth reading.",
+                "rating": 3
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "name": "After Dark",
+        "author": "Haruki Murakami",
+        "price": 12,
+        "image": "https://m.media-amazon.com/images/I/81Bf7HOE6gL.jpg",
+        "rating": 3.9,
+        "description": "A novel about the interconnected lives of various characters during one night in Tokyo.",
+        "released_date": "11/05/2004",
+        "status": "latest",
+        "genre": "Fiction, Surrealism",
+        "comments": [
+            {
+                "name": "David",
+                "comment": "Not Murakami's best work, but still worth reading.",
+                "rating": 3
+            },
+            {
+                "name": "Sarah",
+                "comment": "I really enjoyed this book. The surreal elements were fascinating.",
+                "rating": 4
+            },
+            {
+                "name": "Anna",
+                "comment": "This book is a great representation of Tokyo nightlife.",
+                "rating": 4
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "name": "The Wind-Up Bird Chronicle",
+        "author": "Haruki Murakami",
+        "price": 15,
+        "image": "https://m.media-amazon.com/images/I/81dVKg6ZepL._AC_UF1000,1000_QL80_.jpg",
+        "rating": 4.7,
+        "description": "A novel about a man searching for his missing wife, which leads him on a surreal journey.",
+        "released_date": "17/02/1994",
+        "status": "bestseller",
+        "genre": "Fiction, Surrealism",
+        "comments": [
+            {
+                "name": "Oliver",
+                "comment": "This is one of my all-time favorite books. The writing is beautiful and the story is captivating.",
+                "rating": 5
+            },
+            {
+                "name": "Ella",
+                "comment": "The surreal elements of this book were a bit too much for me, but I still appreciated the writing.",
+                "rating": 3
+            },
+            {
+                "name": "Nate",
+                "comment": "I found this book to be a bit slow-paced, but the ending was worth it.",
+                "rating": 4
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Sputnik Sweetheart",
+        "author": "Haruki Murakami",
+        "price": 11,
+        "image": "https://m.media-amazon.com/images/I/81k9bHqrTHL._AC_UF1000,1000_QL80_.jpg",
+        "rating": 4.1,
+        "description": "A novel about a woman who goes missing while on vacation and the two people who love her.",
+        "released_date": "09/01/1999",
+        "status": "latest",
+        "genre": "Fiction, Romance",
+        "comments": [
+            {
+                "name": "Sophie",
+                "comment": "This is one of my favorite Murakami books. The characters are so well-developed.",
+                "rating": 5
+            },
+            {
+                "name": "Liam",
+                "comment": "I found this book to be a bit slow-paced, but the ending was worth it.",
+                "rating": 3
+            },
+            {
+                "name": "Nora",
+                "comment": "I loved the relationships in this book. Murakami is great at writing about love.",
+                "rating": 4
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "name": "Norwegian Wood",
+        "author": "Haruki Murakami",
+        "price": 15.99,
+        "image": "https://www.oldcastlebooks.co.uk/images/large/9780857304568.jpg",
+        "rating": 4.3,
+        "description": "A bittersweet coming-of-age story set in 1960s Tokyo, Norwegian Wood follows the story of Toru Watanabe as he navigates love, loss, and the complexities of adulthood.",
+        "released_date": "01/09/1987",
+        "status": "latest",
+        "genre": "Literary fiction, Romance",
+        "comments": [
+            {
+                "name": "John Doe",
+                "comment": "I loved this book. The writing is beautiful and the characters are so real.",
+                "rating": 5
+            },
+            {
+                "name": "Jane Doe",
+                "comment": "A poignant and emotional read that will stay with me for a long time.",
+                "rating": 4
+            },
+            {
+                "name": "Sarah Smith",
+                "comment": "I found the book slow at times, but the ending was worth it.",
+                "rating": 3
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "name": "Kafka on the Shore",
+        "author": "Haruki Murakami",
+        "price": 12.99,
+        "image": "https://bizweb.dktcdn.net/100/326/228/products/norwegian-wood-by-haruki-murakami-bookworm-hanoi-61f52b57-dbe0-4b7e-bcc5-cafe58c19dd2.jpg?v=1658475045817",
+        "rating": 4.6,
+        "description": "A surreal and haunting tale, Kafka on the Shore follows the parallel journeys of a young boy named Kafka Tamura and an elderly man named Nakata.",
+        "released_date": "01/01/2002",
+        "status": "feature",
+        "genre": "Magical realism, Fantasy, Surrealism",
+        "comments": [
+            {
+                "name": "Alice Johnson",
+                "comment": "One of the most beautiful and imaginative books I've ever read.",
+                "rating": 5
+            },
+            {
+                "name": "Mark Davis",
+                "comment": "The plot can be confusing at times, but the writing is excellent.",
+                "rating": 4
+            },
+            {
+                "name": "Tom Smith",
+                "comment": "Not my cup of tea, but I can see why others might like it.",
+                "rating": 3
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "name": "1Q84",
+        "author": "Haruki Murakami",
+        "price": 18.99,
+        "image": "https://isach.info/images/story/cover/1q84__haruki_murakami.jpg",
+        "rating": 4.2,
+        "description": "A sprawling epic set in a parallel universe, 1Q84 follows the intersecting lives of two protagonists: Aomame, a young woman who works as an assassin, and Tengo, a struggling novelist.",
+        "released_date": "29/05/2009",
+        "status": "feature",
+        "genre": "Magical realism, Science fiction, Suspense",
+        "comments": [
+            {
+                "name": "Amy Lee",
+                "comment": "I couldn't put this book down. Murakami's imagination knows no bounds.",
+                "rating": 5
+            },
+            {
+                "name": "Peter Jones",
+                "comment": "The book is a bit too long, but the ending makes up for it.",
+                "rating": 4
+            },
+            {
+                "name": "Maria Garcia",
+                "comment": "The book was a bit confusing at times, but overall I enjoyed it.",
+                "rating": 3
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "name": "Colorless Tsukuru Tazaki and His Years of Pilgrimage",
+        "author": "Haruki Murakami",
+        "price": 11.99,
+        "image": "https://m.media-amazon.com/images/I/81++DiPFJ1L._AC_UF1000,1000_QL80_.jpg",
+        "rating": 4.1,
+        "description": "A poignant and introspective novel, Colorless Tsukuru Tazaki and His Years of Pilgrimage follows the story of Tsukuru Tazaki, a young man who sets out on a journey to discover the truth about his past and confront his inner demons.",
+        "released_date": "12/04/2013",
+        "status": "latest",
+        "genre": "Literary fiction, Coming-of-age",
+        "comments": [
+            {
+                "name": "Kate Davis",
+                "comment": "This is a beautiful and moving book that explores the themes of identity and belonging.",
+                "rating": 5
+            },
+            {
+                "name": "David Brown",
+                "comment": "The book can be a bit slow-paced at times, but it's worth it for the emotional payoff.",
+                "rating": 4
+            },
+            {
+                "name": "Mary Smith",
+                "comment": "I found the book a bit too introspective for my taste, but it's well-written.",
+                "rating": 3
+            }
+        ]
+    }
+]

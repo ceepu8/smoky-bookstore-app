@@ -30,9 +30,9 @@
     }
 
     &:hover {
-      border-color: #f44244;
+      border-color: $primary;
       svg {
-        color: #f44244;
+        color: $primary;
       }
     }
   }
@@ -86,7 +86,7 @@
     }
 
     &:hover {
-      background-color: #f44244;
+      background-color: $primary;
       svg {
         color: #ffffff;
       }

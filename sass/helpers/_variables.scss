@@ -1,4 +1,4 @@
-$primary: #62ab00;
+$primary: #f44244;
 $secondary: #333333;
 
 $white: #ffffff;
@@ -56,6 +56,12 @@ $mg-4: 60px;
 //border
 $bd-1: 2px;
 $bd-2: 8px;
+
+//shadow
+$image-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+  rgba(0, 0, 0, 0.23) 0px 6px 6px;
+$setting-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+$card-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 
 //break points
 $breakpoints: (

@@ -1,0 +1,92 @@
+#collections {
+  margin-bottom: 84px;
+
+  .collection-tabs {
+    .tab-item {
+      padding: 16px 24px;
+      background-color: $bright-gray;
+      color: $gray;
+      border-radius: 50px;
+      font-size: 18px;
+    }
+    .tab-item.active {
+      padding: 16px 24px;
+      background-color: $primary;
+      color: $white;
+      border-radius: 50px;
+      font-size: 18px;
+    }
+  }
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    .card-item {
+      min-height: 480px;
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      justify-content: space-between;
+      text-align: center;
+      border: 0.1px solid $philippine-silver;
+
+      .card-header {
+        position: relative;
+        padding: 64px;
+        background-color: $bright-gray;
+        img {
+          max-height: 250px;
+          margin: auto;
+          box-shadow: $image-shadow;
+        }
+        .card-settings {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          width: 80%;
+          background-color: $white;
+          box-shadow: $setting-shadow;
+          transition: all 0.15s;
+          visibility: hidden;
+          opacity: 0;
+          .setting-list {
+            display: flex;
+            justify-content: center;
+            gap: 0 24px;
+            padding: 18px;
+            transition: all 0.15s;
+            .setting-item {
+              i {
+                transition: all 0.15s;
+                font-size: 22px;
+              }
+              &:hover {
+                i {
+                  color: $primary;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .card-content {
+        text-align: left;
+        padding: 16px;
+        .rating-stars {
+          display: flex;
+        }
+      }
+      &:hover {
+        box-shadow: $card-shadow;
+        .card-header {
+          .card-settings {
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

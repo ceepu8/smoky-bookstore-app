@@ -2,3 +2,7 @@
 1. 3D Carousel: https://codepen.io/claudiulazar/pen/OdvVOo
 2. https://codepen.io/alphardex/pen/dyPQyKY
 3. animation: https://css-tricks.com/snippets/css/shake-css-keyframe-animation/
+
+
+ZOOM
+4. https://viblo.asia/p/cach-de-zoom-anh-chi-voi-javascript-va-css-thuan-4dbZND7L5YM

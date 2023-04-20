@@ -59,10 +59,11 @@ function renderBooks(payload) {
     return (
       result +
       `
-        <div class="card-item group" id="quiz-${book.id}">
+      <div class="card-item group">
+         <a href="./detail.html?id=${book.id}">
             <div class="card-header">
-                <img src="${book.image}" alt="book"/>
-                  <div class="card-settings">
+                <img src="${book.image[0]}" alt="book"/>
+                <div class="card-settings">
                     <div class="setting-list">
                         <a href="#" class="setting-item"><i class="fas fa-search"></i></a>
                         <a href="#" class="setting-item"><i class="fa-solid fa-heart"></i></a>
@@ -79,7 +80,8 @@ function renderBooks(payload) {
                     ${ratingHtml}
                 </div>
             </div>       
-         </div>
+          </a>
+       </div>
       `
     );
   }, "");

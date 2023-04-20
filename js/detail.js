@@ -52,7 +52,7 @@ function renderBook(book) {
         <h1 class="text-3xl font-medium">${book.name}</h1>
         <h2 class="text-2xl">Author: ${book.author}</h2>
         <p class="text-2xl text-red-500">$${book.price.toFixed(2)}</p>
-        <p>Genre: ${book.genre}</p>
+        <p>Genre: ${book.genre.join(", ")}</p>
         <p>Description: ${book.description}</p>
         <p>Released Date: ${book.released_date}</p>
 
@@ -79,9 +79,85 @@ function renderBook(book) {
   document.getElementById("book-infor").innerHTML = html;
 }
 
+function renderRelatedProds(payload, genres) {
+  const newPayload = [];
+
+  for (let i = 0; i < payload.length; i++) {
+    const book = payload[i];
+    for (let j = 0; j < book.genre.length; j++) {
+      if (book.genre[j] === genres) {
+        newPayload.push(book);
+        break;
+      }
+    }
+  }
+
+  const html = newPayload.reduce((result, book) => {
+    const rating = Array.from({ length: book.rating.toFixed() }, () => 1);
+    const leftRating = Array.from(
+      { length: 5 - book.rating.toFixed() },
+      () => 1
+    );
+    const ratingHtml = `
+        ${rating
+          .map(() => `<i class="fa-solid fa-star" style="color: #e5cd34;"></i>`)
+          .join("")}
+        ${leftRating.map(() => `<i class="fa-solid fa-star"></i>`).join("")}
+    `;
+
+    // <section class="slider-wrapper">
+    //   <button class="slide-arrow" id="slide-arrow-prev">
+    //     &#8249;
+    //   </button>
+
+    //   <button class="slide-arrow" id="slide-arrow-next">
+    //     &#8250;
+    //   </button>
+
+    //   <ul class="slides-container" id="slides-container">
+    //     <li class="slide"></li>
+    //     <li class="slide"></li>
+    //     <li class="slide"></li>
+    //     <li class="slide"></li>
+    //   </ul>
+    // </section>;
+
+    return (
+      result +
+      `
+      <div class="card-item group">
+         <a href="./detail.html?id=${book.id}">
+            <div class="card-header">
+                <img src="${book.image[0]}" alt="book"/>
+                <div class="card-settings">
+                    <div class="setting-list">
+                        <a href="#" class="setting-item"><i class="fas fa-search"></i></a>
+                        <a href="#" class="setting-item"><i class="fa-solid fa-heart"></i></a>
+                        <a href="#" class="setting-item"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-content">
+                <h1 class="text-xl font-medium line-clamp-1">${book.name}</h1>
+                <p class="text-lg text-red-600 font-medium">$${book.price.toFixed(
+                  2
+                )}</p>
+                <div class="rating-stars">
+                    ${ratingHtml}
+                </div>
+            </div>       
+          </a>
+       </div>
+      `
+    );
+  }, "");
+  document.querySelector("#related-product .product-list").innerHTML = html;
+}
+
 window.onload = (event) => {
   let str = window.location.search;
   let id = str.replace("?id=", "");
   const book = findBook(id);
   renderBook(book);
+  renderRelatedProds(BOOK_LIST, book.genre[0]);
 };

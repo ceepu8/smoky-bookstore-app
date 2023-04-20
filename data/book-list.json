@@ -11,7 +11,10 @@
         "description": "A classic novel about the decadence of the Jazz Age in America.",
         "released_date": "10/04/1925",
         "status": "feature",
-        "genre": "Fiction, Drama",
+        "genre": [
+            "Fiction",
+            "Drama"
+        ],
         "comments": [
             {
                 "name": "Alice",
@@ -42,7 +45,11 @@
         "description": "A dystopian novel about a totalitarian government controlling every aspect of people's lives.",
         "released_date": "08/06/1949",
         "status": "feature",
-        "genre": "Fiction, Science Fiction",
+        "genre": [
+            "Fiction",
+            "Science",
+            "Fiction"
+        ],
         "comments": [
             {
                 "name": "Dave",
@@ -73,7 +80,10 @@
         "description": "A coming-of-age novel about a teenage boy who is disillusioned with the world around him.",
         "released_date": "16/07/1951",
         "status": "bestseller",
-        "genre": "Fiction, Bildungsroman",
+        "genre": [
+            "Fiction",
+            "Bildungsroman"
+        ],
         "comments": [
             {
                 "name": "Grace",
@@ -104,7 +114,10 @@
         "description": "A novel about racial injustice and the loss of innocence in a small Southern town.",
         "released_date": "11/07/1960",
         "status": "feature",
-        "genre": "Fiction, Southern Gothic",
+        "genre": [
+            "Fiction",
+            "Southern Gothic"
+        ],
         "comments": [
             {
                 "name": "John",
@@ -135,7 +148,11 @@
         "description": "A surreal novel about a man searching for his missing wife and dealing with strange events in his life.",
         "released_date": "12/06/1994",
         "status": "bestseller",
-        "genre": "Fiction, Surrealism, Magic Realism",
+        "genre": [
+            "Fiction",
+            "Surrealism",
+            "Magic Realism"
+        ],
         "comments": [
             {
                 "name": "Maria",
@@ -166,7 +183,10 @@
         "description": "A novel about love, loss, and growing up in 1960s Tokyo.",
         "released_date": "20/06/1987",
         "status": "bestseller",
-        "genre": "Fiction, Romance",
+        "genre": [
+            "Fiction",
+            "Romance"
+        ],
         "comments": [
             {
                 "name": "Peter",
@@ -197,7 +217,10 @@
         "description": "A classic children's novel about a hobbit who goes on an adventure with dwarves to reclaim their treasure from a dragon.",
         "released_date": "21/09/1937",
         "status": "latest",
-        "genre": "Fiction, Fantasy",
+        "genre": [
+            "Fiction",
+            "Fantasy"
+        ],
         "comments": [
             {
                 "name": "Sophie",
@@ -228,7 +251,11 @@
         "description": "A surreal novel about a teenage boy who runs away from home and a man who can talk to cats.",
         "released_date": "12/01/2002",
         "status": "feature",
-        "genre": "Fiction, Surrealism, Magical Realism",
+        "genre": [
+            "Fiction",
+            "Surrealism",
+            "Magical Realism"
+        ],
         "comments": [
             {
                 "name": "Avery",
@@ -261,7 +288,10 @@
         "description": "A novel about the history of the Buendía family and the town of Macondo, spanning over a century.",
         "released_date": "30/05/1967",
         "status": "latest",
-        "genre": "Fiction, Magic Realism",
+        "genre": [
+            "Fiction",
+            "Magic Realism"
+        ],
         "comments": [
             {
                 "name": "Jacob",
@@ -292,7 +322,10 @@
         "description": "A novel about the interconnected lives of various characters during one night in Tokyo.",
         "released_date": "11/05/2004",
         "status": "latest",
-        "genre": "Fiction, Surrealism",
+        "genre": [
+            "Fiction",
+            "Surrealism"
+        ],
         "comments": [
             {
                 "name": "David",
@@ -323,7 +356,10 @@
         "description": "A novel about a man searching for his missing wife, which leads him on a surreal journey.",
         "released_date": "17/02/1994",
         "status": "bestseller",
-        "genre": "Fiction, Surrealism",
+        "genre": [
+            "Fiction",
+            "Surrealism"
+        ],
         "comments": [
             {
                 "name": "Oliver",
@@ -354,7 +390,10 @@
         "description": "A novel about a woman who goes missing while on vacation and the two people who love her.",
         "released_date": "09/01/1999",
         "status": "latest",
-        "genre": "Fiction, Romance",
+        "genre": [
+            "Fiction",
+            "Romance"
+        ],
         "comments": [
             {
                 "name": "Sophie",
@@ -385,7 +424,10 @@
         "description": "A bittersweet coming-of-age story set in 1960s Tokyo, Norwegian Wood follows the story of Toru Watanabe as he navigates love, loss, and the complexities of adulthood.",
         "released_date": "01/09/1987",
         "status": "latest",
-        "genre": "Literary fiction, Romance",
+        "genre": [
+            "Literary fiction",
+            "Romance"
+        ],
         "comments": [
             {
                 "name": "John Doe",
@@ -416,7 +458,11 @@
         "description": "A surreal and haunting tale, Kafka on the Shore follows the parallel journeys of a young boy named Kafka Tamura and an elderly man named Nakata.",
         "released_date": "01/01/2002",
         "status": "feature",
-        "genre": "Magical realism, Fantasy, Surrealism",
+        "genre": [
+            "Magical realism",
+            "Fantasy",
+            "Surrealism"
+        ],
         "comments": [
             {
                 "name": "Alice Johnson",
@@ -447,7 +493,11 @@
         "description": "A sprawling epic set in a parallel universe, 1Q84 follows the intersecting lives of two protagonists: Aomame, a young woman who works as an assassin, and Tengo, a struggling novelist.",
         "released_date": "29/05/2009",
         "status": "feature",
-        "genre": "Magical realism, Science fiction, Suspense",
+        "genre": [
+            "Magical realism",
+            "Science fiction",
+            "Suspense"
+        ],
         "comments": [
             {
                 "name": "Amy Lee",
@@ -478,7 +528,10 @@
         "description": "A poignant and introspective novel, Colorless Tsukuru Tazaki and His Years of Pilgrimage follows the story of Tsukuru Tazaki, a young man who sets out on a journey to discover the truth about his past and confront his inner demons.",
         "released_date": "12/04/2013",
         "status": "latest",
-        "genre": "Literary fiction, Coming-of-age",
+        "genre": [
+            "Literary fiction",
+            "Coming-of-age"
+        ],
         "comments": [
             {
                 "name": "Kate Davis",

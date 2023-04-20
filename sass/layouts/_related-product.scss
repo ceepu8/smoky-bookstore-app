@@ -1,0 +1,74 @@
+#related-product {
+  margin-bottom: 84px;
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    .card-item {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      justify-content: space-between;
+      text-align: center;
+      border: 0.1px solid $philippine-silver;
+
+      .card-header {
+        position: relative;
+        padding: 64px;
+        background-color: $bright-gray;
+        img {
+          height: 230px;
+          margin: auto;
+          box-shadow: $image-shadow;
+        }
+        .card-settings {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          width: 80%;
+          background-color: $white;
+          box-shadow: $setting-shadow;
+          transition: all 0.15s;
+          visibility: hidden;
+          opacity: 0;
+          .setting-list {
+            display: flex;
+            justify-content: center;
+            gap: 0 24px;
+            padding: 18px;
+            transition: all 0.15s;
+            .setting-item {
+              i {
+                transition: all 0.15s;
+                font-size: 22px;
+              }
+              &:hover {
+                i {
+                  color: $primary;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .card-content {
+        text-align: left;
+        padding: 16px;
+        .rating-stars {
+          display: flex;
+        }
+      }
+      &:hover {
+        box-shadow: $card-shadow;
+        .card-header {
+          .card-settings {
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

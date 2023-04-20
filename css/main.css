@@ -505,7 +505,6 @@ a {
 
 #detail {
   padding: 231.5px 0px 84px 0px;
-  min-height: 100vh;
 }
 
 figure.zoom {
@@ -524,6 +523,73 @@ figure.zoom img {
   transition: opacity 0.5s;
   display: block;
   width: 100%;
+}
+
+#related-product {
+  margin-bottom: 84px;
+}
+#related-product .product-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+#related-product .product-list .card-item {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  justify-content: space-between;
+  text-align: center;
+  border: 0.1px solid #b8b8b8;
+}
+#related-product .product-list .card-item .card-header {
+  position: relative;
+  padding: 64px;
+  background-color: #efefef;
+}
+#related-product .product-list .card-item .card-header img {
+  height: 230px;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+#related-product .product-list .card-item .card-header .card-settings {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 80%;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  transition: all 0.15s;
+  visibility: hidden;
+  opacity: 0;
+}
+#related-product .product-list .card-item .card-header .card-settings .setting-list {
+  display: flex;
+  justify-content: center;
+  gap: 0 24px;
+  padding: 18px;
+  transition: all 0.15s;
+}
+#related-product .product-list .card-item .card-header .card-settings .setting-list .setting-item i {
+  transition: all 0.15s;
+  font-size: 22px;
+}
+#related-product .product-list .card-item .card-header .card-settings .setting-list .setting-item:hover i {
+  color: #f44244;
+}
+#related-product .product-list .card-item .card-content {
+  text-align: left;
+  padding: 16px;
+}
+#related-product .product-list .card-item .card-content .rating-stars {
+  display: flex;
+}
+#related-product .product-list .card-item:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+#related-product .product-list .card-item:hover .card-header .card-settings {
+  visibility: visible;
+  opacity: 1;
 }
 
 .splide.service .splide__arrow {

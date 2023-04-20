@@ -4,7 +4,9 @@
         "author": "F. Scott Fitzgerald.",
         "name": "The Great Gatsby",
         "price": 10,
-        "image": "https://www.oldcastlebooks.co.uk/images/large/9780857304568.jpg",
+        "image": [
+            "https://www.oldcastlebooks.co.uk/images/large/9780857304568.jpg"
+        ],
         "rating": 4.5,
         "description": "A classic novel about the decadence of the Jazz Age in America.",
         "released_date": "10/04/1925",
@@ -33,7 +35,9 @@
         "name": "1984",
         "author": "George Orwell",
         "price": 12,
-        "image": "https://qph.cf2.quoracdn.net/main-qimg-db3e75729b79933b7ce321a9331e287b-lq",
+        "image": [
+            "https://qph.cf2.quoracdn.net/main-qimg-db3e75729b79933b7ce321a9331e287b-lq"
+        ],
         "rating": 4,
         "description": "A dystopian novel about a totalitarian government controlling every aspect of people's lives.",
         "released_date": "08/06/1949",
@@ -62,7 +66,9 @@
         "name": "The Catcher in the Rye",
         "author": "J.D.Salinger",
         "price": 8,
-        "image": "https://m.media-amazon.com/images/I/61fgOuZfBGL._AC_UF1000,1000_QL80_.jpg",
+        "image": [
+            "https://m.media-amazon.com/images/I/61fgOuZfBGL._AC_UF1000,1000_QL80_.jpg"
+        ],
         "rating": 3.5,
         "description": "A coming-of-age novel about a teenage boy who is disillusioned with the world around him.",
         "released_date": "16/07/1951",
@@ -91,7 +97,9 @@
         "name": "To Kill a Mockingbird",
         "author": "Harper Lee",
         "price": 9,
-        "image": "https://cdn.britannica.com/21/182021-050-666DB6B1/book-cover-To-Kill-a-Mockingbird-many-1961.jpg",
+        "image": [
+            "https://cdn.britannica.com/21/182021-050-666DB6B1/book-cover-To-Kill-a-Mockingbird-many-1961.jpg"
+        ],
         "rating": 4.8,
         "description": "A novel about racial injustice and the loss of innocence in a small Southern town.",
         "released_date": "11/07/1960",
@@ -120,7 +128,9 @@
         "name": "The Wind-Up Bird Chronicle",
         "author": "Haruki Murakami",
         "price": 15,
-        "image": "https://salt.tikicdn.com/cache/w1200/media/catalog/product/i/m/img070_3_5.jpg",
+        "image": [
+            "https://salt.tikicdn.com/cache/w1200/media/catalog/product/i/m/img070_3_5.jpg"
+        ],
         "rating": 4.2,
         "description": "A surreal novel about a man searching for his missing wife and dealing with strange events in his life.",
         "released_date": "12/06/1994",
@@ -149,7 +159,9 @@
         "name": "Norwegian Wood",
         "author": "Haruki Murakami",
         "price": 11,
-        "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1630460042i/11297.jpg",
+        "image": [
+            "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1630460042i/11297.jpg"
+        ],
         "rating": 4,
         "description": "A novel about love, loss, and growing up in 1960s Tokyo.",
         "released_date": "20/06/1987",
@@ -178,7 +190,9 @@
         "name": "The Hobbit",
         "author": "J.R.R.Tolkien",
         "price": 10,
-        "image": "https://www.pluggedin.com/wp-content/uploads/2020/01/hobbit-cover.jpg",
+        "image": [
+            "https://www.pluggedin.com/wp-content/uploads/2020/01/hobbit-cover.jpg"
+        ],
         "rating": 4.6,
         "description": "A classic children's novel about a hobbit who goes on an adventure with dwarves to reclaim their treasure from a dragon.",
         "released_date": "21/09/1937",
@@ -207,7 +221,9 @@
         "name": "Kafka on the Shore",
         "author": "Haruki Murakami",
         "price": 14,
-        "image": "https://m.media-amazon.com/images/I/81zvseHim4L._AC_UF1000,1000_QL80_.jpg",
+        "image": [
+            "https://m.media-amazon.com/images/I/81zvseHim4L._AC_UF1000,1000_QL80_.jpg"
+        ],
         "rating": 4.3,
         "description": "A surreal novel about a teenage boy who runs away from home and a man who can talk to cats.",
         "released_date": "12/01/2002",
@@ -236,7 +252,11 @@
         "name": "One Hundred Years of Solitude",
         "author": "Gabriel Garcia Marquez",
         "price": 13,
-        "image": "https://m.media-amazon.com/images/I/81MI6+TpYkL._AC_UF1000,1000_QL80_.jpg",
+        "image": [
+            "https://m.media-amazon.com/images/I/81MI6+TpYkL._AC_UF1000,1000_QL80_.jpg",
+            "https://m.media-amazon.com/images/I/81zvseHim4L._AC_UF1000,1000_QL80_.jpg",
+            "https://m.media-amazon.com/images/I/81MI6+TpYkL._AC_UF1000,1000_QL80_.jpg"
+        ],
         "rating": 4.5,
         "description": "A novel about the history of the Buendía family and the town of Macondo, spanning over a century.",
         "released_date": "30/05/1967",
@@ -265,7 +285,9 @@
         "name": "After Dark",
         "author": "Haruki Murakami",
         "price": 12,
-        "image": "https://m.media-amazon.com/images/I/81Bf7HOE6gL.jpg",
+        "image": [
+            "https://m.media-amazon.com/images/I/81Bf7HOE6gL.jpg"
+        ],
         "rating": 3.9,
         "description": "A novel about the interconnected lives of various characters during one night in Tokyo.",
         "released_date": "11/05/2004",
@@ -294,7 +316,9 @@
         "name": "The Wind-Up Bird Chronicle",
         "author": "Haruki Murakami",
         "price": 15,
-        "image": "https://m.media-amazon.com/images/I/81dVKg6ZepL._AC_UF1000,1000_QL80_.jpg",
+        "image": [
+            "https://m.media-amazon.com/images/I/81dVKg6ZepL._AC_UF1000,1000_QL80_.jpg"
+        ],
         "rating": 4.7,
         "description": "A novel about a man searching for his missing wife, which leads him on a surreal journey.",
         "released_date": "17/02/1994",
@@ -323,7 +347,9 @@
         "name": "Sputnik Sweetheart",
         "author": "Haruki Murakami",
         "price": 11,
-        "image": "https://m.media-amazon.com/images/I/81k9bHqrTHL._AC_UF1000,1000_QL80_.jpg",
+        "image": [
+            "https://m.media-amazon.com/images/I/81k9bHqrTHL._AC_UF1000,1000_QL80_.jpg"
+        ],
         "rating": 4.1,
         "description": "A novel about a woman who goes missing while on vacation and the two people who love her.",
         "released_date": "09/01/1999",
@@ -352,7 +378,9 @@
         "name": "Norwegian Wood",
         "author": "Haruki Murakami",
         "price": 15.99,
-        "image": "https://www.oldcastlebooks.co.uk/images/large/9780857304568.jpg",
+        "image": [
+            "https://www.oldcastlebooks.co.uk/images/large/9780857304568.jpg"
+        ],
         "rating": 4.3,
         "description": "A bittersweet coming-of-age story set in 1960s Tokyo, Norwegian Wood follows the story of Toru Watanabe as he navigates love, loss, and the complexities of adulthood.",
         "released_date": "01/09/1987",
@@ -381,7 +409,9 @@
         "name": "Kafka on the Shore",
         "author": "Haruki Murakami",
         "price": 12.99,
-        "image": "https://bizweb.dktcdn.net/100/326/228/products/norwegian-wood-by-haruki-murakami-bookworm-hanoi-61f52b57-dbe0-4b7e-bcc5-cafe58c19dd2.jpg?v=1658475045817",
+        "image": [
+            "https://bizweb.dktcdn.net/100/326/228/products/norwegian-wood-by-haruki-murakami-bookworm-hanoi-61f52b57-dbe0-4b7e-bcc5-cafe58c19dd2.jpg?v=1658475045817"
+        ],
         "rating": 4.6,
         "description": "A surreal and haunting tale, Kafka on the Shore follows the parallel journeys of a young boy named Kafka Tamura and an elderly man named Nakata.",
         "released_date": "01/01/2002",
@@ -410,7 +440,9 @@
         "name": "1Q84",
         "author": "Haruki Murakami",
         "price": 18.99,
-        "image": "https://isach.info/images/story/cover/1q84__haruki_murakami.jpg",
+        "image": [
+            "https://isach.info/images/story/cover/1q84__haruki_murakami.jpg"
+        ],
         "rating": 4.2,
         "description": "A sprawling epic set in a parallel universe, 1Q84 follows the intersecting lives of two protagonists: Aomame, a young woman who works as an assassin, and Tengo, a struggling novelist.",
         "released_date": "29/05/2009",
@@ -439,7 +471,9 @@
         "name": "Colorless Tsukuru Tazaki and His Years of Pilgrimage",
         "author": "Haruki Murakami",
         "price": 11.99,
-        "image": "https://m.media-amazon.com/images/I/81++DiPFJ1L._AC_UF1000,1000_QL80_.jpg",
+        "image": [
+            "https://m.media-amazon.com/images/I/81++DiPFJ1L._AC_UF1000,1000_QL80_.jpg"
+        ],
         "rating": 4.1,
         "description": "A poignant and introspective novel, Colorless Tsukuru Tazaki and His Years of Pilgrimage follows the story of Tsukuru Tazaki, a young man who sets out on a journey to discover the truth about his past and confront his inner demons.",
         "released_date": "12/04/2013",

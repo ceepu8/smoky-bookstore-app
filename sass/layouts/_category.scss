@@ -1,0 +1,12 @@
+#category {
+  .category-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 84px 0;
+    .category-item {
+      display: flex;
+      flex-direction: column;
+      gap: 24px 0;
+    }
+  }
+}

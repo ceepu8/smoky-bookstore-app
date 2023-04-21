@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Fiction",
+        "value": "fiction",
+        "subCategory": [
+            "Literary fiction",
+            "Science fiction",
+            "Historical fiction"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Business & Management",
+        "value": "business-management",
+        "subCategory": [
+            "Economics",
+            "Finance & Accounting"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Personal Development",
+        "value": "personal-development",
+        "subCategory": [
+            "Psychology",
+            "Personal Finance"
+        ]
+    }
+]

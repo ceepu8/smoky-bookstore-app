@@ -1,0 +1,119 @@
+{
+    "id": 3,
+    "name": "Fiction",
+    "value": "fiction",
+    "subCategory": {
+        "literary-fiction": {
+            "id": 1,
+            "name": "Literary fiction",
+            "value": "literary-fiction",
+            "books": [
+                {
+                    "id": 17,
+                    "name": "Colorless Tsukuru Tazaki and His Years of Pilgrimage",
+                    "price": 11.99,
+                    "image": [
+                        "https://m.media-amazon.com/images/I/81++DiPFJ1L._AC_UF1000,1000_QL80_.jpg"
+                    ],
+                    "rating": 4.1
+                },
+                {
+                    "id": 4,
+                    "name": "To Kill a Mockingbird",
+                    "price": 9,
+                    "image": [
+                        "https://cdn.britannica.com/21/182021-050-666DB6B1/book-cover-To-Kill-a-Mockingbird-many-1961.jpg"
+                    ],
+                    "rating": 4.8
+                },
+                {
+                    "id": 3,
+                    "name": "The Catcher in the Rye",
+                    "price": 8,
+                    "image": [
+                        "https://m.media-amazon.com/images/I/61fgOuZfBGL._AC_UF1000,1000_QL80_.jpg"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "name": "1984",
+                    "price": 12,
+                    "image": [
+                        "https://qph.cf2.quoracdn.net/main-qimg-db3e75729b79933b7ce321a9331e287b-lq"
+                    ],
+                    "rating": 4
+                }
+            ]
+        },
+        "science-fiction": {
+            "id": 2,
+            "name": "Science fiction",
+            "value": "science-fiction",
+            "books": [
+                {
+                    "id": 15,
+                    "name": "1Q84",
+                    "price": 18.99,
+                    "image": [
+                        "https://isach.info/images/story/cover/1q84__haruki_murakami.jpg"
+                    ],
+                    "rating": 4.2
+                },
+                {
+                    "id": 2,
+                    "name": "1984",
+                    "price": 12,
+                    "image": [
+                        "https://qph.cf2.quoracdn.net/main-qimg-db3e75729b79933b7ce321a9331e287b-lq"
+                    ],
+                    "rating": 4
+                }
+            ]
+        },
+        "historical-fiction": {
+            "id": 3,
+            "name": "Historical fiction",
+            "value": "historical-fiction",
+            "books": [
+                {
+                    "id": 9,
+                    "name": "One Hundred Years of Solitude",
+                    "price": 13,
+                    "image": [
+                        "https://m.media-amazon.com/images/I/81MI6+TpYkL._AC_UF1000,1000_QL80_.jpg",
+                        "https://m.media-amazon.com/images/I/81zvseHim4L._AC_UF1000,1000_QL80_.jpg",
+                        "https://m.media-amazon.com/images/I/81MI6+TpYkL._AC_UF1000,1000_QL80_.jpg"
+                    ],
+                    "rating": 4.5
+                },
+                {
+                    "id": 19,
+                    "name": "The Boys in the Boat",
+                    "price": 11,
+                    "image": [
+                        "https://m.media-amazon.com/images/I/814AgqjL0EL._AC_UF1000,1000_QL80_.jpg"
+                    ],
+                    "rating": 4.8
+                },
+                {
+                    "id": 20,
+                    "name": "Band of Brothers",
+                    "price": 14,
+                    "image": [
+                        "https://m.media-amazon.com/images/I/51y7WMAw3IL._AC_UF1000,1000_QL80_.jpg"
+                    ],
+                    "rating": 4.7
+                },
+                {
+                    "id": 21,
+                    "name": "The Glorious Cause: The American Revolution, 1763-1789",
+                    "price": 18,
+                    "image": [
+                        "https://m.media-amazon.com/images/I/51Y7ntgmaKL._AC_UF1000,1000_QL80_.jpg"
+                    ],
+                    "rating": 4.5
+                }
+            ]
+        }
+    }
+}

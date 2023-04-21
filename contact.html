@@ -4,30 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Detail Book</title>
-    <link rel="icon" href="./assets/logo.png" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
-    />
-
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Contact</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <header
@@ -92,26 +71,116 @@
         </nav>
       </div>
     </header>
-
-    <section id="detail">
-      <div class="container max-w-[1200px] mx-auto">
-        <div id="book-infor"></div>
-      </div>
-    </section>
-
-    <section id="related-product">
-      <div class="container max-w-[1200px] mx-auto">
-        <div
-          class="flex flex-col justify-center items-center space-y-12 text-black"
-        >
-          <div class="text-center">
-            <h2 class="text-4xl font-medium">Related Products</h2>
-            <p>Contrary to popular belief Lorem Ipsum.</p>
+    <section id="contact-form">
+      <div class="container max-w-[1280px] mx-auto">
+        <form>
+          <div>
+            <h1 class="text-3xl">Contact us</h1>
           </div>
-          <div class="product-list">
-            <div class="slider-wrapper"></div>
+
+          <div>
+            <label for="lang-select">Contact Purpose</label>
+            <select name="lang" id="lang-select">
+              <option value="">--Contact Purpose--</option>
+              <option value="sell-book">I want to sell books</option>
+              <option value="buy-book">I want to buy books</option>
+            </select>
           </div>
-        </div>
+          <div class="form-control">
+            <label for="#ContactFormName">Name</label>
+            <input
+              type="text"
+              placeholder="Name"
+              class=""
+              name="contact[name]"
+              id="ContactFormName"
+              value=""
+            />
+          </div>
+
+          <div class="form-control">
+            <label for="#ContactFormEmail">Email</label>
+            <input
+              type="email"
+              placeholder="Email"
+              class=""
+              name="contact[email]"
+              id="ContactFormEmail"
+              value=""
+            />
+          </div>
+
+          <div class="form-control">
+            <label for="#ContactFormPhone">Phone</label>
+            <input
+              type="phone"
+              placeholder="Phone"
+              class=""
+              name="contact[phone]"
+              id="ContactFormPhone"
+              value=""
+            />
+          </div>
+
+          <div class="form-control">
+            <legend>Contact Reference</legend>
+            <div>
+              <label for="#ContactFormContactRef">By Phone</label>
+              <input
+                checked
+                type="checkbox"
+                id="ContactFormContactRef"
+                name="contact[contactRef]"
+                value=""
+              />
+            </div>
+
+            <div>
+              <label for="#ContactFormContactRef">By Email</label>
+              <input
+                checked
+                type="checkbox"
+                id="ContactFormContactRef"
+                name="contact[contactRef]"
+                value=""
+              />
+            </div>
+          </div>
+
+          <div class="form-control">
+            <legend>Receive Weekly Newsletter</legend>
+            <div>
+              <label for="#ContactFormNewsLetter">Yes</label>
+              <input
+                checked
+                type="radio"
+                id="ContactFormNewsLetter"
+                name="contact[newsletter]"
+                value=""
+              />
+            </div>
+            <div>
+              <label for="#ContactFormNewsLetter">No</label>
+              <input
+                checked
+                type="radio"
+                id="ContactFormNewsLetter"
+                name="contact[newsletter]"
+                value=""
+              />
+            </div>
+          </div>
+
+          <div class="form-control">
+            <label for="#ContactFormNote">Extra Notes</label>
+            <textarea
+              id="ContactFormNote"
+              name="contact[note]"
+              placeholder="Extra notes..."
+              value=""
+            ></textarea>
+          </div>
+        </form>
       </div>
     </section>
 
@@ -209,29 +278,5 @@
         </div>
       </div>
     </footer>
-    <!-- IMPORT LIBRARIES -->
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.0/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-    <script>
-      $('[data-fancybox="gallery"]').fancybox({
-        buttons: ["close"],
-        wheel: false,
-        transitionEffect: "slide",
-        // thumbs          : false,
-        // hash            : false,
-        loop: true,
-        // keyboard        : true,
-        toolbar: false,
-        // animationEffect : false,
-        // arrows          : true,
-        clickContent: false,
-      });
-    </script>
-    <script>
-      feather.replace();
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <script type="module" src="./js/detail.js"></script>
   </body>
 </html>

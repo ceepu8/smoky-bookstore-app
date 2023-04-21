@@ -96,7 +96,7 @@ section {
   background-color: #efefef;
 }
 .product-list .card-item .card-header img {
-  max-height: 250px;
+  height: 250px;
   margin: auto;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
@@ -239,7 +239,6 @@ section {
   position: relative;
   padding: 231.5px 0px 0px;
   display: flex;
-  margin-bottom: 84px;
 }
 #carousel .slides {
   position: absolute;
@@ -516,6 +515,7 @@ section {
 
 #detail {
   padding: 231.5px 0px 84px 0px;
+  min-height: calc(100vh - 370px);
 }
 
 figure.zoom {
@@ -601,6 +601,11 @@ figure.zoom img {
 #related-product .product-list .card-item:hover .card-header .card-settings {
   visibility: visible;
   opacity: 1;
+}
+
+#contact-form {
+  padding: 231.5px 0px 0px;
+  min-height: calc(100vh - 370px);
 }
 
 .splide.service .splide__arrow {

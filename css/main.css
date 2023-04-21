@@ -626,10 +626,11 @@ figure.zoom img {
   gap: 0px 24px;
 }
 #contact .contact-content .contact-form .title {
-  margin-bottom: 18px;
+  margin-bottom: 32px;
 }
 #contact .contact-content .contact-form .title h1 {
-  font-size: 28px;
+  color: #f44244;
+  font-size: 44px;
   font-weight: 500;
 }
 #contact .contact-content .contact-intro {

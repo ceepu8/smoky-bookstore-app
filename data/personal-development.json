@@ -1,0 +1,103 @@
+{
+    "id": 2,
+    "name": "Personal Development",
+    "value": "personal-development",
+    "subCategory": {
+        "psychology": {
+            "id": 1,
+            "name": "Psychology",
+            "value": "psychology",
+            "books": [
+                {
+                    "id": 32,
+                    "name": "Thinking, Fast and Slow",
+                    "price": 18,
+                    "image": [
+                        "https://m.media-amazon.com/images/I/61fdrEuPJwL._AC_UF1000,1000_QL80_.jpg"
+                    ],
+                    "rating": 4.5
+                },
+                {
+                    "id": 33,
+                    "name": "Man's Search for Meaning",
+                    "price": 12,
+                    "image": [
+                        "https://m.media-amazon.com/images/I/61nTspM+BYL.jpg"
+                    ],
+                    "rating": 4.6
+                },
+                {
+                    "id": 34,
+                    "name": "The Power of Habit",
+                    "price": 16,
+                    "image": [
+                        "https://bizweb.dktcdn.net/100/326/228/products/thepowerofhabitcharlesduhigg.jpg?v=1540289753220"
+                    ],
+                    "rating": 4.4
+                },
+                {
+                    "id": 35,
+                    "name": "Quiet: The Power of Introverts in a World That Can't Stop Talking",
+                    "price": 14,
+                    "image": [
+                        "https://salt.tikicdn.com/cache/w1200/media/catalog/product/4/1/41m0n7iicsl-_sx323_bo1-204-203-200_.u547.d20160923.t110004.704018.jpg"
+                    ],
+                    "rating": 4.5
+                }
+            ]
+        },
+        "personal-finance": {
+            "id": 2,
+            "name": "Personal Finance",
+            "value": "personal-finance",
+            "books": [
+                {
+                    "id": 36,
+                    "name": "The Total Money Makeover",
+                    "author": "Dave Ramsey",
+                    "price": 20,
+                    "image": [
+                        "https://cdn0.fahasa.com/media/flashmagazine/images/page_images/total_money_makeover_workbook_classic_edition/2023_04_12_09_46_39_1-390x510.jpg"
+                    ],
+                    "rating": 4.7
+                },
+                {
+                    "id": 37,
+                    "name": "Rich Dad Poor Dad",
+                    "price": 15,
+                    "image": [
+                        "https://m.media-amazon.com/images/I/81bsw6fnUiL._AC_UF1000,1000_QL80_.jpg"
+                    ],
+                    "rating": 4.6
+                },
+                {
+                    "id": 38,
+                    "name": "Your Money or Your Life",
+                    "price": 18,
+                    "image": [
+                        "https://bizweb.dktcdn.net/100/326/228/products/your-money-or-your-life-by-vicki-robin-bookworm-hanoi-e07377ce-9f81-4705-8641-60dfa7d97d49.jpg?v=1655116136450"
+                    ],
+                    "rating": 4.2
+                },
+                {
+                    "id": 39,
+                    "name": "The Millionaire Next Door",
+                    "price": 12,
+                    "image": [
+                        "https://m.media-amazon.com/images/I/81y4IBu7gzL._AC_UF1000,1000_QL80_.jpg"
+                    ],
+                    "rating": 4.5
+                },
+                {
+                    "id": 40,
+                    "name": "The Simple Path to Wealth",
+                    "price": 16,
+                    "image": [
+                        "https://m.media-amazon.com/images/I/61X5+sKqMHL._AC_UF1000,1000_QL80_.jpg"
+                    ],
+                    "rating": 4.7
+                }
+            ]
+        }
+    }
+}

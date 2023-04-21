@@ -6,6 +6,4 @@ var splide = new Splide(".splide", {
   pagination: false,
 });
 
-console.log(splide);
-
 splide.mount();

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="icon" href="./assets/logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header
+      id="header"
+      class="shadow-lg flex flex-col align-center space-y-2 py-2 fixed w-full z-[99999]"
+    >
+      <div class="container max-w-[1280px] mx-auto">
+        <div class="content">
+          <a href="./index.html" class="logo">
+            <img src="./assets/logo.png" id="logo-img" />
+            <h1>MyBookstore</h1>
+          </a>
+          <div class="search-bar">
+            <form>
+              <div class="form-group">
+                <input
+                  type="text"
+                  placeholder="Search for..."
+                  class="form-control"
+                  id="headerSearchInput"
+                />
+              </div>
+            </form>
+            <button class="search-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <div class="navigation">
+            <div class="shopping">
+              <span class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-number">0</span>
+              </span>
+              <p class="price">0.00$</p>
+            </div>
+            <div class="settings">
+              <i class="fa-solid fa-gear"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full h-[0.5px] bg-gray-200"></div>
+      <div class="menu py-2">
+        <nav>
+          <ul class="flex space-x-12 justify-center">
+            <li
+              class="border-b-transparent border-solid border-b-[1px] transition-all hover:border-b-black"
+            >
+              <a href="./index.html">Home</a>
+            </li>
+            <li
+              class="border-b-transparent border-solid border-b-[1px] transition-all hover:border-b-black"
+            >
+              <a href="./contact.html">Contact</a>
+            </li>
+            <li
+              class="border-b-transparent border-solid border-b-[1px] transition-all hover:border-b-black"
+            >
+              <a href="#">About</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section id="contact">
+      <div class="container max-w-[1280px] mx-auto">
+        <div class="contact-content">
+          <div class="contact-form">
+            <div class="title">
+              <h1>Contact us.</h1>
+              <p>Our friendly team would love to hear from you!</p>
+            </div>
+            <form id="contact">
+              <div class="form-control" type="select">
+                <label for="lang-select">Contact Purpose</label>
+                <select name="lang" id="lang-select">
+                  <option value="">--Contact Purpose--</option>
+                  <option value="sell-book">I want to sell books</option>
+                  <option value="buy-book">I want to buy books</option>
+                </select>
+              </div>
+              <div class="form-control">
+                <label for="#ContactFormName">Name</label>
+                <input
+                  type="text"
+                  placeholder="Name"
+                  class=""
+                  name="contact[name]"
+                  id="ContactFormName"
+                  value=""
+                />
+              </div>
+
+              <div class="form-control">
+                <label for="#ContactFormEmail">Email</label>
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class=""
+                  name="contact[email]"
+                  id="ContactFormEmail"
+                  value=""
+                />
+              </div>
+
+              <div class="form-control">
+                <label for="#ContactFormPhone">Phone</label>
+                <input
+                  type="phone"
+                  placeholder="Phone"
+                  class=""
+                  name="contact[phone]"
+                  id="ContactFormPhone"
+                  value=""
+                />
+              </div>
+
+              <div class="form-control" type="checkbox">
+                <legend>Contact Reference</legend>
+                <div class="control-checkbox">
+                  <label for="#ContactFormContactRef">By Phone</label>
+                  <input
+                    checked
+                    type="checkbox"
+                    id="ContactFormContactRef"
+                    name="contact[contactRef]"
+                    value=""
+                  />
+                </div>
+
+                <div class="control-checkbox">
+                  <label for="#ContactFormContactRef">By Email</label>
+                  <input
+                    checked
+                    type="checkbox"
+                    id="ContactFormContactRef"
+                    name="contact[contactRef]"
+                    value=""
+                  />
+                </div>
+              </div>
+
+              <div class="form-control" type="radio">
+                <legend>Receive Weekly Newsletter</legend>
+                <div class="control-radio">
+                  <label for="#ContactFormNewsLetter">Yes</label>
+                  <input
+                    checked
+                    type="radio"
+                    id="ContactFormNewsLetter"
+                    name="contact[newsletter]"
+                    value=""
+                  />
+                </div>
+                <div class="control-radio">
+                  <label for="#ContactFormNewsLetter">No</label>
+                  <input
+                    checked
+                    type="radio"
+                    id="ContactFormNewsLetter"
+                    name="contact[newsletter]"
+                    value=""
+                  />
+                </div>
+              </div>
+
+              <div class="form-control">
+                <label for="#ContactFormNote">Extra Notes</label>
+                <textarea
+                  id="ContactFormNote"
+                  name="contact[note]"
+                  placeholder="Extra notes..."
+                  rows="8"
+                  value=""
+                ></textarea>
+              </div>
+
+              <div>
+                <button class="primary-button">Submit</button>
+              </div>
+            </form>
+          </div>
+          <div class="contact-intro"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-100">
+      <div class="container max-w-[1280px] mx-auto">
+        <div class="grid grid-cols-5 gap-x-8 py-12">
+          <div class="col-span-2 flex flex-col gap-y-6">
+            <h2 class="text-xl font-medium uppercase">About Info</h2>
+            <p class="text-gray-700 text-md">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
+              sint totam autem. Qui aut esse nobis libero quaerat commodi
+              consequuntur velit ratione asperiores? Eaque, eveniet. Soluta
+              accusantium eos dolores. Adipisci!
+            </p>
+            <ul class="text-gray-700 space-y-4">
+              <li class="flex items-center space-x-4">
+                <i class="text-xs" data-feather="map-pin"></i>
+                <span>Address: A Street, HCM City</span>
+              </li>
+              <li class="flex items-center space-x-4">
+                <i class="text-xs" data-feather="mail"></i>
+                <a href="mailto:uyencao@gmail.com"
+                  >Email:
+                  <span class="text-[#f44244]">uyencao@gmail.com</span></a
+                >
+              </li>
+              <li class="flex items-center space-x-4">
+                <i class="text-xs" data-feather="phone"></i>
+                <a href="tel:(+84) 909748777"
+                  >Phone: <span class="text-[#f44244]">(+84) 909748777</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-y-6">
+            <h2 class="text-xl font-medium uppercase">Information</h2>
+            <ul class="text-gray-700 space-y-4">
+              <li class="flex items-center group space-x-4">
+                <a href="#" class="group-hover:underline">Sign in</a>
+              </li>
+              <li class="flex items-center group space-x-4">
+                <a href="#" class="group-hover:underline">View Cart</a>
+              </li>
+              <li class="flex items-center group space-x-4">
+                <a href="#" class="group-hover:underline">My Wishlist</a>
+              </li>
+              <li class="flex items-center group space-x-4">
+                <a href="#" class="group-hover:underline">Track My Order</a>
+              </li>
+              <li class="flex items-center group space-x-4">
+                <a href="#" class="group-hover:underline">Help</a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-y-6">
+            <h2 class="text-xl font-medium uppercase">Info Links</h2>
+            <ul class="text-gray-700 space-y-4">
+              <li class="flex items-center group space-x-4">
+                <a href="#" class="group-hover:underline">Home</a>
+              </li>
+              <li class="flex items-center group space-x-4">
+                <a href="#" class="group-hover:underline">About Us</a>
+              </li>
+              <li class="flex items-center group space-x-4">
+                <a href="#" class="group-hover:underline">Shop</a>
+              </li>
+              <li class="flex items-center group space-x-4">
+                <a href="#" class="group-hover:underline">Blog</a>
+              </li>
+              <li class="flex items-center group space-x-4">
+                <a href="#" class="group-hover:underline">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-y-6">
+            <h2 class="text-xl font-medium uppercase">Support Area</h2>
+            <ul class="text-gray-700 space-y-4">
+              <li class="flex items-center group space-x-4">
+                <a href="#" class="group-hover:underline">Hello & Contact</a>
+              </li>
+              <li class="flex items-center group space-x-4">
+                <a href="#" class="group-hover:underline">Shipping & Task</a>
+              </li>
+              <li class="flex items-center group space-x-4">
+                <a href="#" class="group-hover:underline">Return Policy</a>
+              </li>
+              <li class="flex items-center group space-x-4">
+                <a href="#" class="group-hover:underline">Affiliates</a>
+              </li>
+              <li class="flex items-center group space-x-4">
+                <a href="#" class="group-hover:underline">Legal Notice</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

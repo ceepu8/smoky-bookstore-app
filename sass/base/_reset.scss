@@ -94,7 +94,7 @@ section {
       padding: 64px;
       background-color: $bright-gray;
       img {
-        max-height: 250px;
+        height: 250px;
         margin: auto;
         box-shadow: $image-shadow;
       }
@@ -146,5 +146,18 @@ section {
         }
       }
     }
+  }
+}
+
+.primary-button {
+  color: $white;
+  background-color: $primary;
+  padding: 12px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.15s;
+  &:hover {
+    background-color: $black;
   }
 }

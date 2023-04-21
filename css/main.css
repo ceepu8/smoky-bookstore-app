@@ -96,7 +96,7 @@ section {
   background-color: #efefef;
 }
 .product-list .card-item .card-header img {
-  max-height: 250px;
+  height: 250px;
   margin: auto;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
@@ -139,6 +139,19 @@ section {
 .product-list .card-item:hover .card-header .card-settings {
   visibility: visible;
   opacity: 1;
+}
+
+.primary-button {
+  color: #ffffff;
+  background-color: #f44244;
+  padding: 12px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.15s;
+}
+.primary-button:hover {
+  background-color: #000000;
 }
 
 #header {
@@ -239,7 +252,6 @@ section {
   position: relative;
   padding: 231.5px 0px 0px;
   display: flex;
-  margin-bottom: 84px;
 }
 #carousel .slides {
   position: absolute;
@@ -516,6 +528,7 @@ section {
 
 #detail {
   padding: 231.5px 0px 84px 0px;
+  min-height: calc(100vh - 370px);
 }
 
 figure.zoom {
@@ -601,6 +614,90 @@ figure.zoom img {
 #related-product .product-list .card-item:hover .card-header .card-settings {
   visibility: visible;
   opacity: 1;
+}
+
+#contact {
+  padding: 231.5px 0px 0px;
+  min-height: calc(100vh - 370px);
+}
+#contact .contact-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0px 24px;
+}
+#contact .contact-content .contact-form .title {
+  margin-bottom: 32px;
+}
+#contact .contact-content .contact-form .title h1 {
+  color: #f44244;
+  font-size: 44px;
+  font-weight: 500;
+}
+#contact .contact-content .contact-intro {
+  background-image: url(../assets/contact-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px 8px 8px 84px;
+}
+
+form#contact {
+  padding: 24px;
+  border: 1px solid #e5e7eb;
+  gap: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+form#contact .form-control {
+  width: 100%;
+}
+form#contact .form-control label {
+  font-size: 18px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+form#contact .form-control input[type=text],
+form#contact .form-control input[type=email],
+form#contact .form-control input[type=phone],
+form#contact .form-control textarea {
+  border: 1px solid #e5e7eb;
+  padding: 16px;
+  border-radius: 8px;
+}
+form#contact .form-control[type=radio], form#contact .form-control[type=checkbox] {
+  display: flex;
+  gap: 0 32px;
+}
+form#contact .form-control[type=radio] legend, form#contact .form-control[type=checkbox] legend {
+  font-size: 18px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+form#contact .form-control[type=radio] .control-radio,
+form#contact .form-control[type=radio] .control-checkbox, form#contact .form-control[type=checkbox] .control-radio,
+form#contact .form-control[type=checkbox] .control-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0 12px;
+}
+form#contact .form-control[type=radio] .control-radio label,
+form#contact .form-control[type=radio] .control-checkbox label, form#contact .form-control[type=checkbox] .control-radio label,
+form#contact .form-control[type=checkbox] .control-checkbox label {
+  font-size: 16px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+form#contact .form-control[type=select] {
+  display: flex;
+  align-items: center;
+  gap: 0 16px;
+}
+form#contact .form-control[type=select] select {
+  flex: 1;
+  border: 1px solid #e5e7eb;
+  padding: 16px;
+  border-radius: 8px;
 }
 
 .splide.service .splide__arrow {

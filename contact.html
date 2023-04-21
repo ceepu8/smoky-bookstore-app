@@ -71,116 +71,126 @@
         </nav>
       </div>
     </header>
-    <section id="contact-form">
+    <section id="contact">
       <div class="container max-w-[1280px] mx-auto">
-        <form>
-          <div>
-            <h1 class="text-3xl">Contact us</h1>
-          </div>
-
-          <div>
-            <label for="lang-select">Contact Purpose</label>
-            <select name="lang" id="lang-select">
-              <option value="">--Contact Purpose--</option>
-              <option value="sell-book">I want to sell books</option>
-              <option value="buy-book">I want to buy books</option>
-            </select>
-          </div>
-          <div class="form-control">
-            <label for="#ContactFormName">Name</label>
-            <input
-              type="text"
-              placeholder="Name"
-              class=""
-              name="contact[name]"
-              id="ContactFormName"
-              value=""
-            />
-          </div>
-
-          <div class="form-control">
-            <label for="#ContactFormEmail">Email</label>
-            <input
-              type="email"
-              placeholder="Email"
-              class=""
-              name="contact[email]"
-              id="ContactFormEmail"
-              value=""
-            />
-          </div>
-
-          <div class="form-control">
-            <label for="#ContactFormPhone">Phone</label>
-            <input
-              type="phone"
-              placeholder="Phone"
-              class=""
-              name="contact[phone]"
-              id="ContactFormPhone"
-              value=""
-            />
-          </div>
-
-          <div class="form-control">
-            <legend>Contact Reference</legend>
-            <div>
-              <label for="#ContactFormContactRef">By Phone</label>
-              <input
-                checked
-                type="checkbox"
-                id="ContactFormContactRef"
-                name="contact[contactRef]"
-                value=""
-              />
+        <div class="contact-content">
+          <div class="contact-form">
+            <div class="title">
+              <h1>Contact us</h1>
+              <p>Our friendly team would love to hear from you!</p>
             </div>
+            <form id="contact">
+              <div class="form-control" type="select">
+                <label for="lang-select">Contact Purpose</label>
+                <select name="lang" id="lang-select">
+                  <option value="">--Contact Purpose--</option>
+                  <option value="sell-book">I want to sell books</option>
+                  <option value="buy-book">I want to buy books</option>
+                </select>
+              </div>
+              <div class="form-control">
+                <label for="#ContactFormName">Name</label>
+                <input
+                  type="text"
+                  placeholder="Name"
+                  class=""
+                  name="contact[name]"
+                  id="ContactFormName"
+                  value=""
+                />
+              </div>
 
-            <div>
-              <label for="#ContactFormContactRef">By Email</label>
-              <input
-                checked
-                type="checkbox"
-                id="ContactFormContactRef"
-                name="contact[contactRef]"
-                value=""
-              />
-            </div>
-          </div>
+              <div class="form-control">
+                <label for="#ContactFormEmail">Email</label>
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class=""
+                  name="contact[email]"
+                  id="ContactFormEmail"
+                  value=""
+                />
+              </div>
 
-          <div class="form-control">
-            <legend>Receive Weekly Newsletter</legend>
-            <div>
-              <label for="#ContactFormNewsLetter">Yes</label>
-              <input
-                checked
-                type="radio"
-                id="ContactFormNewsLetter"
-                name="contact[newsletter]"
-                value=""
-              />
-            </div>
-            <div>
-              <label for="#ContactFormNewsLetter">No</label>
-              <input
-                checked
-                type="radio"
-                id="ContactFormNewsLetter"
-                name="contact[newsletter]"
-                value=""
-              />
-            </div>
-          </div>
+              <div class="form-control">
+                <label for="#ContactFormPhone">Phone</label>
+                <input
+                  type="phone"
+                  placeholder="Phone"
+                  class=""
+                  name="contact[phone]"
+                  id="ContactFormPhone"
+                  value=""
+                />
+              </div>
 
-          <div class="form-control">
-            <label for="#ContactFormNote">Extra Notes</label>
-            <textarea
-              id="ContactFormNote"
-              name="contact[note]"
-              placeholder="Extra notes..."
-              value=""
-            ></textarea>
+              <div class="form-control" type="checkbox">
+                <legend>Contact Reference</legend>
+                <div class="control-checkbox">
+                  <label for="#ContactFormContactRef">By Phone</label>
+                  <input
+                    checked
+                    type="checkbox"
+                    id="ContactFormContactRef"
+                    name="contact[contactRef]"
+                    value=""
+                  />
+                </div>
+
+                <div class="control-checkbox">
+                  <label for="#ContactFormContactRef">By Email</label>
+                  <input
+                    checked
+                    type="checkbox"
+                    id="ContactFormContactRef"
+                    name="contact[contactRef]"
+                    value=""
+                  />
+                </div>
+              </div>
+
+              <div class="form-control" type="radio">
+                <legend>Receive Weekly Newsletter</legend>
+                <div class="control-radio">
+                  <label for="#ContactFormNewsLetter">Yes</label>
+                  <input
+                    checked
+                    type="radio"
+                    id="ContactFormNewsLetter"
+                    name="contact[newsletter]"
+                    value=""
+                  />
+                </div>
+                <div class="control-radio">
+                  <label for="#ContactFormNewsLetter">No</label>
+                  <input
+                    checked
+                    type="radio"
+                    id="ContactFormNewsLetter"
+                    name="contact[newsletter]"
+                    value=""
+                  />
+                </div>
+              </div>
+
+              <div class="form-control">
+                <label for="#ContactFormNote">Extra Notes</label>
+                <textarea
+                  id="ContactFormNote"
+                  name="contact[note]"
+                  placeholder="Extra notes..."
+                  rows="8"
+                  value=""
+                ></textarea>
+              </div>
+
+              <div>
+                <button class="primary-button">Submit</button>
+              </div>
+            </form>
           </div>
-        </form>
+          <div class="contact-intro"></div>
+        </div>
       </div>
     </section>
 

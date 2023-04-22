@@ -3,16 +3,20 @@
 // Base
 @import "./base/reset";
 
+//COMMON
+@import "./layouts/common/header";
+@import "./layouts/common/footer";
+
+// HOME
+@import "./layouts/home/blog";
+@import "./layouts/home/promotion";
+@import "./layouts/home/carousel";
+@import "./layouts/home/services";
+@import "./layouts/home/category";
+
 // Layouts
-@import "./layouts/header";
-@import "./layouts/carousel";
-@import "./layouts/services";
 @import "./layouts/collections";
-@import "./layouts/category";
-@import "./layouts/promotion";
 @import "./layouts/client";
-@import "./layouts/blog";
-@import "./layouts/footer";
 @import "./layouts/best-seller";
 
 // DETAIL PAGE

@@ -1,12 +1,11 @@
 #contact {
   padding: calc(147.5px + 84px) 0px 0px;
-  min-height: calc(100vh - 370px);
   .contact-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0px 24px;
     .contact-form {
-      .title {
+      .form-title {
         margin-bottom: 32px;
         h1 {
           color: $primary;
@@ -27,6 +26,7 @@
 }
 
 form#contact {
+  height: fit-content;
   padding: 24px;
   border: 1px solid $bright-solid-gray;
   gap: 16px 0;

@@ -36,23 +36,62 @@ $ls-1: 0.015rem;
 $ls-2: 0.03rem;
 
 //Padding
-$pd-1: 25px;
-$pd-2: 225px;
-$pd-3: 13px;
-$pd-4: 44px;
-$pd-5: 100px;
-$pd-6: 8px;
-$pd-7: 60px;
-$pd-8: 150px;
-$pd-9: 5px;
-$pd-10: 20px;
+$pd-1: 4px;
+$pd-2: 8px;
+$pd-3: 12px;
+$pd-4: 16px;
+$pd-5: 20px;
+$pd-6: 24px;
+$pd-7: 28px;
+$pd-8: 32px;
+$pd-9: 36px;
+$pd-10: 40px;
+$pd-11: 44px;
+$pd-12: 48px;
+$pd-13: 52px;
+$pd-14: 56px;
+$pd-15: 60px;
+$pd-16: 64px;
+$pd-17: 68px;
+$pd-18: 72px;
+$pd-18: 76px;
+$pd-20: 80px;
+$pd-21: 84px;
+
+//Gap
+$g-1: 4px;
+$g-2: 8px;
+$g-3: 12px;
+$g-4: 16px;
+$g-5: 20px;
+$g-6: 24px;
+$g-7: 28px;
+$g-8: 32px;
+$g-9: 36px;
+$g-10: 40px;
 
 //Margin
-$mg-0: 5px;
-$mg-1: 30px;
-$mg-2: 25px;
-$mg-3: 70px;
-$mg-4: 60px;
+$m-1: 4px;
+$m-2: 8px;
+$m-3: 12px;
+$m-4: 16px;
+$m-5: 20px;
+$m-6: 24px;
+$m-7: 28px;
+$m-8: 32px;
+$m-9: 36px;
+$m-10: 40px;
+$m-11: 44px;
+$m-12: 48px;
+$m-13: 52px;
+$m-14: 56px;
+$m-15: 60px;
+$m-16: 64px;
+$m-17: 68px;
+$m-18: 72px;
+$m-18: 76px;
+$m-20: 80px;
+$m-21: 84px;
 
 //border
 $bd-1: 2px;
@@ -61,6 +100,9 @@ $bd-2: 8px;
 //shadow
 $image-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
   rgba(0, 0, 0, 0.23) 0px 6px 6px;
+$header-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+  rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+  rgba(0, 0, 0, 0.07) 0px 16px 16px;
 $setting-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 $card-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 

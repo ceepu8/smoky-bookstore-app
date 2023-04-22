@@ -1,0 +1,139 @@
+$carousel-height: 250px;
+$carousel-preview-width: 70;
+
+$products-amount-visible: 5;
+$product-width: 250px;
+
+$carousel-width: calc((250px * 5) + 22px);
+
+.slider-js {
+  &__view {
+    width: $carousel-width;
+    height: $carousel-height;
+    background: white;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+  }
+  &__control {
+    align-items: center;
+    background: transparent;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    opacity: 0.7;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    border: 1px solid #c2c2c2;
+    opacity: 0;
+    visibility: hidden;
+
+    transition: all 0.25s;
+
+    svg {
+      fill: none;
+      height: 24px;
+      width: 24px;
+      color: #212121;
+    }
+
+    &:hover {
+      border-color: $primary;
+      svg {
+        color: $primary;
+      }
+    }
+
+    &.js-carousel-prev {
+      left: 0;
+      transform: translateY(-50%) translateX(20px);
+    }
+
+    &.js-carousel-next {
+      right: 0;
+      transform: translateY(-50%) translateX(-20px);
+    }
+  }
+  &:hover .slider-js__control {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-50%) translateX(0px);
+  }
+}
+
+.slider-product-list {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  transition: transform 0.3s;
+  transform: translateX(0px);
+  list-style: none;
+  height: $carousel-height;
+
+  &__item {
+    width: 250px;
+    height: $carousel-height;
+    display: inline-block;
+  }
+}
+
+.slider-product {
+  display: table;
+  height: 100%;
+  width: 100%;
+  span {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+  }
+
+  .slider-content {
+    padding: $pd-6;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: $g-2 0;
+    a img {
+      max-width: 75px;
+      margin-bottom: $m-2;
+    }
+    .slider-header {
+      h2 {
+        font-size: 24px;
+        font-weight: 500;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+
+  &[data-slide="1"] {
+    background-color: #f5fdff;
+  }
+  &[data-slide="2"] {
+    background-color: #faf1ff;
+  }
+  &[data-slide="3"] {
+    background-color: #faf4eb;
+  }
+  &[data-slide="4"] {
+    background-color: #e6f2f4;
+  }
+  &[data-slide="5"] {
+    background-color: #f4e6e5;
+  }
+  &[data-slide="6"] {
+    background-color: #f3fdec;
+  }
+}

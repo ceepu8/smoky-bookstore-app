@@ -21,15 +21,15 @@
       href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/main.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header
-      id="header"
-      class="shadow-lg flex flex-col align-center space-y-2 py-2 fixed w-full z-[99999]"
-    >
-      <div class="container max-w-[1280px] mx-auto">
+    <header id="header">
+      <div class="container">
         <div class="content">
           <a href="./index.html" class="logo">
             <img src="./assets/logo.png" id="logo-img" />
@@ -37,7 +37,7 @@
           </a>
           <div class="search-bar">
             <form>
-              <div class="form-group">
+              <div class="form-control">
                 <input
                   type="text"
                   placeholder="Search for..."
@@ -64,23 +64,17 @@
           </div>
         </div>
       </div>
-      <div class="w-full h-[0.5px] bg-gray-200"></div>
+      <div class="line-break"></div>
       <div class="menu py-2">
         <nav>
-          <ul class="flex space-x-12 justify-center">
-            <li
-              class="border-b-transparent border-solid border-b-[1px] transition-all hover:border-b-black"
-            >
+          <ul>
+            <li>
               <a href="./index.html">Home</a>
             </li>
-            <li
-              class="border-b-transparent border-solid border-b-[1px] transition-all hover:border-b-black"
-            >
+            <li>
               <a href="./contact.html">Contact</a>
             </li>
-            <li
-              class="border-b-transparent border-solid border-b-[1px] transition-all hover:border-b-black"
-            >
+            <li>
               <a href="#">About</a>
             </li>
           </ul>
@@ -91,17 +85,13 @@
     <section id="carousel">
       <div class="slides">
         <div class="slide-item">
-          <div class="flex items-center justify-between space-x-8">
+          <div class="slide-content">
             <img src="./assets//book-1.avif" alt="Stainless Steel" />
-            <div class="flex flex-col items-start space-y-2 text-white">
-              <h2 class="text-4xl">A New World</h2>
-              <span class="text-2xl">Author: Julojulo Vondos</span>
-              <span class="text-xl">$75.00</span>
-              <button
-                class="border-solid border-[2px] border-white px-8 py-4 uppercase"
-              >
-                Shop now
-              </button>
+            <div class="book-info">
+              <h2 class="book-title">A New World</h2>
+              <span class="book-author">Author: Julojulo Vondos</span>
+              <span class="book-price">$75.00</span>
+              <button class="secondary-button size-lg">Shop now</button>
             </div>
           </div>
         </div>
@@ -169,117 +159,100 @@
     </section>
 
     <section id="services">
-      <div class="container max-w-[1280px] mx-auto">
-        <div class="splide service group">
-          <div class="splide__arrows">
-            <button class="splide__arrow splide__arrow--prev">
+      <div class="container">
+        <div class="slider-js js-product-carousel">
+          <div class="slider-js__view">
+            <span class="slider-js__control js-carousel-prev">
+              <i data-feather="chevron-left"></i>
+            </span>
+            <span class="slider-js__control js-carousel-next">
               <i data-feather="chevron-right"></i>
-            </button>
-            <button class="splide__arrow splide__arrow--next">
-              <i data-feather="chevron-right"></i>
-            </button>
-          </div>
-          <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide px-4" style="width: 20%">
-                <div
-                  class="bg-[#f5fdff] h-full flex flex-col justify-center space-y-6 p-6 hover:shadow"
-                >
-                  <a href="#" tabindex="0"
-                    ><img
-                      class="max-w-[75px]"
-                      src="./assets/icons/children.svg"
-                      alt="children"
-                    />
-                  </a>
-                  <div>
-                    <h2 class="text-xl font-medium">Children</h2>
-                    <p>Special Collections</p>
+            </span>
+            <ul class="slider-product-list js-product-list">
+              <li class="slider-product-list__item">
+                <div data-slide="1" class="slider-product">
+                  <div class="slider-content">
+                    <a href="#" tabindex="0"
+                      ><img src="./assets/icons/children.svg" alt="children" />
+                    </a>
+                    <div class="slider-header">
+                      <h2>Children</h2>
+                      <p>Special Collections</p>
+                    </div>
                   </div>
                 </div>
               </li>
-              <li class="splide__slide px-4" style="width: 20%">
-                <div
-                  class="bg-[#faf1ff] h-full flex flex-col justify-center space-y-6 p-6 hover:shadow"
-                >
-                  <a href="#" tabindex="0">
-                    <img
-                      class="max-w-[75px]"
-                      src="./assets/icons/photography.svg"
-                      alt="photography"
-                    />
-                  </a>
-                  <div>
-                    <h2 class="text-xl font-medium">Photography</h2>
-                    <p>Special Collections</p>
+              <li class="slider-product-list__item">
+                <div data-slide="2" class="slider-product">
+                  <div class="slider-content">
+                    <a href="#" tabindex="0">
+                      <img
+                        src="./assets/icons/photography.svg"
+                        alt="photography"
+                      />
+                    </a>
+                    <div class="slider-header">
+                      <h2>Photography</h2>
+                      <p>Special Collections</p>
+                    </div>
                   </div>
                 </div>
               </li>
-              <li class="splide__slide px-4" style="width: 20%">
-                <div
-                  class="bg-[#faf4eb] h-full flex flex-col justify-center space-y-6 p-6 hover:shadow"
-                >
-                  <a href="#" tabindex="0">
-                    <img
-                      class="max-w-[75px]"
-                      src="./assets/icons/food-and-drink.svg"
-                      alt="photography"
-                    />
-                  </a>
-                  <div>
-                    <h2 class="text-xl font-medium">Food & Drink</h2>
-                    <p>Special Collections</p>
+              <li class="slider-product-list__item">
+                <div data-slide="3" class="slider-product">
+                  <div class="slider-content">
+                    <a href="#" tabindex="0">
+                      <img
+                        src="./assets/icons/food-and-drink.svg"
+                        alt="photography"
+                      />
+                    </a>
+                    <div class="slider-header">
+                      <h2 class="text-xl font-medium">Food & Drink</h2>
+                      <p>Special Collections</p>
+                    </div>
                   </div>
                 </div>
               </li>
-              <li class="splide__slide px-4" style="width: 20%">
-                <div
-                  class="bg-[#e6f2f4] h-full flex flex-col justify-center space-y-6 p-6 hover:shadow"
-                >
-                  <a href="#" tabindex="0">
-                    <img
-                      class="max-w-[75px]"
-                      src="./assets/icons/health.svg"
-                      alt="photography"
-                    />
-                  </a>
-                  <div>
-                    <h2 class="text-xl font-medium">Health</h2>
-                    <p>Special Collections</p>
+              <li class="slider-product-list__item">
+                <div data-slide="4" class="slider-product">
+                  <div class="slider-content">
+                    <a href="#" tabindex="0">
+                      <img src="./assets/icons/health.svg" alt="photography" />
+                    </a>
+                    <div class="slider-header">
+                      <h2 class="text-xl font-medium">Health</h2>
+                      <p>Special Collections</p>
+                    </div>
                   </div>
                 </div>
               </li>
-              <li class="splide__slide px-4" style="width: 20%">
-                <div
-                  class="bg-[#f4e6e5] h-full flex flex-col justify-center space-y-6 p-6 hover:shadow"
-                >
-                  <a href="#" tabindex="0">
-                    <img
-                      class="max-w-[75px]"
-                      src="./assets/icons/romance.svg"
-                      alt="photography"
-                    />
-                  </a>
-                  <div>
-                    <h2 class="text-xl font-medium">Romance</h2>
-                    <p>Special Collections</p>
+              <li class="slider-product-list__item">
+                <div data-slide="5" class="slider-product">
+                  <div class="slider-content">
+                    <a href="#" tabindex="0">
+                      <img src="./assets/icons/romance.svg" alt="photography" />
+                    </a>
+                    <div class="slider-header">
+                      <h2 class="text-xl font-medium">Romance</h2>
+                      <p>Special Collections</p>
+                    </div>
                   </div>
                 </div>
               </li>
-              <li class="splide__slide px-4" style="width: 20%">
-                <div
-                  class="bg-[#f3fdec] h-full flex flex-col justify-center space-y-6 p-6 hover:shadow"
-                >
-                  <a href="#" tabindex="0">
-                    <img
-                      class="max-w-[75px]"
-                      src="./assets/icons/biography.svg"
-                      alt="photography"
-                    />
-                  </a>
-                  <div>
-                    <h2 class="text-xl font-medium">Biography</h2>
-                    <p>Special Collections</p>
+              <li class="slider-product-list__item">
+                <div data-slide="6" class="slider-product">
+                  <div class="slider-content">
+                    <a href="#" tabindex="0">
+                      <img
+                        src="./assets/icons/biography.svg"
+                        alt="photography"
+                      />
+                    </a>
+                    <div class="slider-header">
+                      <h2 class="text-xl font-medium">Biography</h2>
+                      <p>Special Collections</p>
+                    </div>
                   </div>
                 </div>
               </li>
@@ -290,12 +263,10 @@
     </section>
 
     <section id="collections">
-      <div class="container max-w-[1280px] mx-auto">
-        <div
-          class="flex flex-col justify-center items-center space-y-12 text-black"
-        >
+      <div class="container">
+        <div class="collection-header">
           <div class="text-center">
-            <h2 class="text-4xl font-medium">Popular Collections</h2>
+            <h2 class="title">Popular Collections</h2>
             <p>Contrary to popular belief Lorem Ipsum.</p>
           </div>
           <div class="tab-list flex gap-x-6"></div>
@@ -305,43 +276,31 @@
     </section>
 
     <section id="category">
-      <div class="container max-w-[1280px] mx-auto">
+      <div class="container">
         <div class="category-rows"></div>
       </div>
     </section>
 
     <section id="promotion">
-      <div class="container max-w-[1280px] mx-auto">
-        <div class="banner-list grid grid-cols-2 gap-8">
-          <div
-            class="animate__animated animate__bounceInLeft duration-700 banner-item relative group overflow-hidden transition-all"
-          >
+      <div class="container">
+        <div class="banner-list">
+          <div class="banner-item">
             <a href="#">
-              <img
-                src="../assets/promo-banner-1.webp"
-                alt="promo banner 2"
-                class="w-full group-hover:scale-110 transition-all duration-400"
-              />
-              <div class="absolute top-0 left-0 p-8">
-                <p class="text-xl">BLACK FRIDAY</p>
-                <h2 class="text-4xl semibold">Wall Lighting Black.</h2>
-                <span href="#" class="underline text-sm">SHOP NOW</span>
+              <img src="../assets/promo-banner-1.webp" alt="promo banner 2" />
+              <div class="banner-content">
+                <h2 class="title">BLACK FRIDAY</h2>
+                <p class="name">Wall Lighting Black.</p>
+                <button class="underline-button">SHOP NOW</button>
               </div>
             </a>
           </div>
-          <div
-            class="animate__animated animate__bounceInRight duration-700 banner-item relative group overflow-hidden transition-all"
-          >
+          <div class="banner-item">
             <a href="#">
-              <img
-                src="../assets/promo-banner-2.webp"
-                alt="promo banner 2"
-                class="w-full group-hover:scale-110 transition-all duration-400"
-              />
-              <div class="absolute top-0 left-0 p-8">
-                <p class="text-xl">BLACK FRIDAY</p>
-                <h2 class="text-4xl semibold">Wall Lighting Black.</h2>
-                <span href="#" class="underline text-sm">SHOP NOW</span>
+              <img src="../assets/promo-banner-2.webp" alt="promo banner 2" />
+              <div class="banner-content">
+                <h2 class="title">BLACK FRIDAY</h2>
+                <p class="name">Wall Lighting Black.</p>
+                <button class="underline-button">SHOP NOW</button>
               </div>
             </a>
           </div>
@@ -349,8 +308,8 @@
       </div>
     </section>
 
-    <section id="client">
-      <div class="container max-w-[1280px] mx-auto">
+    <!-- <section id="client">
+      <div class="container">
         <div
           class="flex flex-col justify-center items-center space-y-12 py-32 px-24 text-white"
         >
@@ -408,36 +367,26 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section id="blog">
-      <div class="container max-w-[1280px] mx-auto">
-        <div
-          class="flex flex-col justify-center items-center space-y-12 text-black"
-        >
+      <div class="container">
+        <div class="content">
           <div class="text-center">
-            <h2 class="text-4xl font-medium">Latest Blogs</h2>
+            <h2 class="title">Latest Blogs</h2>
             <p>Contrary to popular belief Lorem Ipsum.</p>
           </div>
 
-          <div class="cart-list grid grid-cols-3 gap-x-4">
-            <div
-              class="group flex flex-col cursor-pointer justify-between space-y-4 text-center p-4 border border-solid border-gray-200"
-            >
-              <div class="relative overflow-hidden transition-all">
-                <img
-                  class="group-hover:scale-110 transition-all duration-400"
-                  src="./assets/blog-1.jpg"
-                  alt="blog-1"
-                />
+          <div class="card-list">
+            <div class="card-item">
+              <div class="img-wrapper">
+                <img src="./assets/blog-1.jpg" alt="blog-1" />
               </div>
 
-              <h3 class="text-xl font-medium">Winer Flower Collections</h3>
-              <div class="w-full h-[0.5px] bg-gray-200"></div>
-              <span class="text-gray-500 font-light text-sm"
-                >24 July, 2022 \ 2 comments</span
-              >
-              <p class="text-sm text-gray-700 line-clamp-3">
+              <h3 class="card-title">Winer Flower Collections</h3>
+              <div class="line-break"></div>
+              <span class="other-infor">24 July, 2022 \ 2 comments</span>
+              <p class="card-desc line-clamp-3">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Repellendus laudantium expedita suscipit temporibus numquam.
                 Quos incidunt aspernatur veritatis sequi provident neque
@@ -446,28 +395,20 @@
               </p>
               <div>
                 <button
-                  class="border-[1px] border-solid border-gray-300 rounded-full py-3 px-6 text-sm transition-all group-hover:bg-[#f44244] group-hover:border-[#f44244] group-hover:text-white"
+                  class="primary-button btn-w-fit btn-rounded read-more-btn"
                 >
                   Read More...
                 </button>
               </div>
             </div>
-            <div
-              class="group flex flex-col cursor-pointer justify-between space-y-4 text-center p-4 border border-solid border-gray-200"
-            >
-              <div class="relative overflow-hidden transition-all">
-                <img
-                  class="group-hover:scale-110 transition-all duration-400"
-                  src="./assets/blog-2.jpg"
-                  alt="blog-2"
-                />
+            <div class="card-item">
+              <div class="img-wrapper">
+                <img src="./assets/blog-2.jpg" alt="blog-2" />
               </div>
 
-              <h3 class="text-xl font-medium">Winer Flower Collections</h3>
-              <div class="w-full h-[0.5px] bg-gray-200"></div>
-              <span class="text-gray-500 font-light text-sm"
-                >24 July, 2022 \ 2 comments</span
-              >
+              <h3 class="card-title">Winer Flower Collections</h3>
+              <div class="line-break"></div>
+              <span class="other-infor">24 July, 2022 \ 2 comments</span>
               <p class="text-sm transition-all text-gray-700 line-clamp-3">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Repellendus laudantium expedita suscipit temporibus numquam.
@@ -477,29 +418,21 @@
               </p>
               <div>
                 <button
-                  class="border-[1px] border-solid border-gray-300 rounded-full py-3 px-6 text-sm transition-all group-hover:bg-[#f44244] group-hover:border-[#f44244] group-hover:text-white"
+                  class="primary-button btn-w-fit btn-rounded read-more-btn"
                 >
                   Read More...
                 </button>
               </div>
             </div>
-            <div
-              class="group flex flex-col cursor-pointer justify-between space-y-4 text-center p-4 border border-solid border-gray-200"
-            >
-              <div class="relative overflow-hidden transition-all">
-                <img
-                  class="group-hover:scale-110 transition-all duration-400"
-                  src="./assets/blog-3.jpg"
-                  alt="blog-3"
-                />
+            <div class="card-item">
+              <div class="img-wrapper">
+                <img src="./assets/blog-3.jpg" alt="blog-3" />
               </div>
 
-              <h3 class="text-xl font-medium">Winer Flower Collections</h3>
-              <div class="w-full h-[0.5px] bg-gray-200"></div>
-              <span class="text-gray-500 font-light text-sm"
-                >24 July, 2022 \ 2 comments</span
-              >
-              <p class="text-sm text-gray-700 line-clamp-3">
+              <h3 class="card-title">Winer Flower Collections</h3>
+              <div class="line-break"></div>
+              <span class="other-infor">24 July, 2022 \ 2 comments</span>
+              <p class="card-desc line-clamp-3">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Repellendus laudantium expedita suscipit temporibus numquam.
                 Quos incidunt aspernatur veritatis sequi provident neque
@@ -508,7 +441,7 @@
               </p>
               <div>
                 <button
-                  class="border-[1px] border-solid border-gray-300 rounded-full py-3 px-6 text-sm transition-all group-hover:bg-[#f44244] group-hover:border-[#f44244] group-hover:text-white"
+                  class="primary-button btn-w-fit btn-rounded read-more-btn"
                 >
                   Read More...
                 </button>
@@ -519,94 +452,93 @@
       </div>
     </section>
 
-    <footer class="bg-gray-100">
-      <div class="container max-w-[1280px] mx-auto">
-        <div class="grid grid-cols-5 gap-x-8 py-12">
-          <div class="col-span-2 flex flex-col gap-y-6">
-            <h2 class="text-xl font-medium uppercase">About Info</h2>
-            <p class="text-gray-700 text-md">
+    <footer>
+      <div class="container">
+        <div class="footer-col-list">
+          <div class="footer-col">
+            <h2 class="col-title">About Info</h2>
+            <p class="col-text-info">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
               sint totam autem. Qui aut esse nobis libero quaerat commodi
               consequuntur velit ratione asperiores? Eaque, eveniet. Soluta
               accusantium eos dolores. Adipisci!
             </p>
-            <ul class="text-gray-700 space-y-4">
-              <li class="flex items-center space-x-4">
-                <i class="text-xs" data-feather="map-pin"></i>
+            <ul>
+              <li>
+                <i data-feather="map-pin"></i>
                 <span>Address: A Street, HCM City</span>
               </li>
-              <li class="flex items-center space-x-4">
-                <i class="text-xs" data-feather="mail"></i>
+              <li>
+                <i data-feather="mail"></i>
                 <a href="mailto:uyencao@gmail.com"
-                  >Email:
-                  <span class="text-[#f44244]">uyencao@gmail.com</span></a
+                  >Email: <span>uyencao@gmail.com</span></a
                 >
               </li>
-              <li class="flex items-center space-x-4">
-                <i class="text-xs" data-feather="phone"></i>
+              <li>
+                <i data-feather="phone"></i>
                 <a href="tel:(+84) 909748777"
-                  >Phone: <span class="text-[#f44244]">(+84) 909748777</span></a
+                  >Phone: <span>(+84) 909748777</span></a
                 >
               </li>
             </ul>
           </div>
-          <div class="flex flex-col gap-y-6">
-            <h2 class="text-xl font-medium uppercase">Information</h2>
-            <ul class="text-gray-700 space-y-4">
-              <li class="flex items-center group space-x-4">
-                <a href="#" class="group-hover:underline">Sign in</a>
+          <div class="footer-col">
+            <h2 class="col-title">Information</h2>
+            <ul>
+              <li>
+                <a href="#">Sign in</a>
               </li>
-              <li class="flex items-center group space-x-4">
-                <a href="#" class="group-hover:underline">View Cart</a>
+              <li>
+                <a href="#">View Cart</a>
               </li>
-              <li class="flex items-center group space-x-4">
-                <a href="#" class="group-hover:underline">My Wishlist</a>
+              <li>
+                <a href="#">My Wishlist</a>
               </li>
-              <li class="flex items-center group space-x-4">
-                <a href="#" class="group-hover:underline">Track My Order</a>
+              <li>
+                <a href="#">Track My Order</a>
               </li>
-              <li class="flex items-center group space-x-4">
-                <a href="#" class="group-hover:underline">Help</a>
-              </li>
-            </ul>
-          </div>
-          <div class="flex flex-col gap-y-6">
-            <h2 class="text-xl font-medium uppercase">Info Links</h2>
-            <ul class="text-gray-700 space-y-4">
-              <li class="flex items-center group space-x-4">
-                <a href="#" class="group-hover:underline">Home</a>
-              </li>
-              <li class="flex items-center group space-x-4">
-                <a href="#" class="group-hover:underline">About Us</a>
-              </li>
-              <li class="flex items-center group space-x-4">
-                <a href="#" class="group-hover:underline">Shop</a>
-              </li>
-              <li class="flex items-center group space-x-4">
-                <a href="#" class="group-hover:underline">Blog</a>
-              </li>
-              <li class="flex items-center group space-x-4">
-                <a href="#" class="group-hover:underline">Contact Us</a>
+              <li>
+                <a href="#">Help</a>
               </li>
             </ul>
           </div>
-          <div class="flex flex-col gap-y-6">
-            <h2 class="text-xl font-medium uppercase">Support Area</h2>
-            <ul class="text-gray-700 space-y-4">
-              <li class="flex items-center group space-x-4">
-                <a href="#" class="group-hover:underline">Hello & Contact</a>
+          <div class="footer-col">
+            <h2 class="col-title">Info Links</h2>
+            <ul>
+              <li>
+                <a href="#">Home</a>
               </li>
-              <li class="flex items-center group space-x-4">
-                <a href="#" class="group-hover:underline">Shipping & Task</a>
+              <li>
+                <a href="#">About Us</a>
               </li>
-              <li class="flex items-center group space-x-4">
-                <a href="#" class="group-hover:underline">Return Policy</a>
+              <li>
+                <a href="#">Shop</a>
               </li>
-              <li class="flex items-center group space-x-4">
-                <a href="#" class="group-hover:underline">Affiliates</a>
+              <li>
+                <a href="#">Blog</a>
               </li>
-              <li class="flex items-center group space-x-4">
-                <a href="#" class="group-hover:underline">Legal Notice</a>
+              <li>
+                <a href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h2 class="col-title">Support Area</h2>
+            <ul>
+              <li>
+                <a href="#">Hello & Contact</a>
+              </li>
+              <li>
+                <a href="#">Shipping & Task</a>
+              </li>
+              <li>
+                <a href="#">Return Policy</a>
+              </li>
+              <li>
+                <a href="#">Affiliates</a>
+              </li>
+              <li>
+                <a href="#">Legal Notice</a>
               </li>
             </ul>
           </div>
@@ -621,6 +553,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script type="module" src="./js/services.js"></script>
     <script type="module" src="./js/carousel.js"></script>
+    <script type="module" src="./js/slide.js"></script>
     <script type="module" src="./js/client.js"></script>
     <script type="module" src="./js/index.js"></script>
   </body>

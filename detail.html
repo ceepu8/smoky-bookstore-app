@@ -30,11 +30,8 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <header
-      id="header"
-      class="shadow-lg flex flex-col align-center space-y-2 py-2 fixed w-full z-[99999]"
-    >
-      <div class="container max-w-[1280px] mx-auto">
+    <header id="header">
+      <div class="container">
         <div class="content">
           <a href="./index.html" class="logo">
             <img src="./assets/logo.png" id="logo-img" />
@@ -42,7 +39,7 @@
           </a>
           <div class="search-bar">
             <form>
-              <div class="form-group">
+              <div class="form-control">
                 <input
                   type="text"
                   placeholder="Search for..."
@@ -69,23 +66,17 @@
           </div>
         </div>
       </div>
-      <div class="w-full h-[0.5px] bg-gray-200"></div>
+      <div class="line-break"></div>
       <div class="menu py-2">
         <nav>
-          <ul class="flex space-x-12 justify-center">
-            <li
-              class="border-b-transparent border-solid border-b-[1px] transition-all hover:border-b-black"
-            >
+          <ul>
+            <li>
               <a href="./index.html">Home</a>
             </li>
-            <li
-              class="border-b-transparent border-solid border-b-[1px] transition-all hover:border-b-black"
-            >
+            <li>
               <a href="./contact.html">Contact</a>
             </li>
-            <li
-              class="border-b-transparent border-solid border-b-[1px] transition-all hover:border-b-black"
-            >
+            <li>
               <a href="#">About</a>
             </li>
           </ul>

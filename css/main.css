@@ -957,7 +957,6 @@ figure.zoom img {
 
 #contact {
   padding: 231.5px 0px 0px;
-  min-height: calc(100vh - 370px - 147.5px);
 }
 #contact .contact-content {
   display: grid;

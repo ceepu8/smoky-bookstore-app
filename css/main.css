@@ -869,6 +869,39 @@ footer .footer-col-list .footer-col:nth-child(1) ul li:hover a {
   padding: 231.5px 0px 84px 0px;
   min-height: calc(100vh - 370px);
 }
+#detail #book-infor .book-cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 40px;
+}
+#detail #book-infor .book-cols .book-image .image-wrapper {
+  border: 1px solid #e5e7eb;
+  padding: 48px 0px;
+  margin-bottom: 16px;
+}
+#detail #book-infor .book-cols .book-image .image-wrapper figure {
+  margin: 0 auto;
+  max-width: 300px;
+}
+#detail #book-infor .book-cols .book-image .related-image {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0 16px;
+}
+#detail #book-infor .book-cols .book-image .related-image .image-item .item-wrapper {
+  padding: 24px;
+  border: 1px solid #e5e7eb;
+  text-align: center;
+}
+#detail #book-infor .book-cols .book-image .related-image .image-item .item-wrapper img {
+  max-height: 100px;
+  margin: auto;
+}
+#detail #book-infor .book-cols .book-details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px 0px;
+}
 
 figure.zoom {
   background-position: 50% 50%;

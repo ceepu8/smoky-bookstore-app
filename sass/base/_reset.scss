@@ -234,3 +234,17 @@ section {
 .btn-rounded {
   border-radius: 50px;
 }
+
+.breadcrumb {
+  font-size: 18px;
+  margin-bottom: $m-8;
+  .breadcrumb-item {
+    &:hover a {
+      text-decoration: underline;
+    }
+    a.active {
+      text-decoration: underline;
+      cursor: not-allowed;
+    }
+  }
+}

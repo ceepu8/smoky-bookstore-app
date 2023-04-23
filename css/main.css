@@ -256,6 +256,10 @@ section {
   }
 }
 @media all and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
   .product-list {
     grid-template-columns: 1fr 1fr;
   }
@@ -328,6 +332,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 0px 16px;
 }
 #header .container .content .logo {
   display: flex;
@@ -335,8 +340,8 @@ section {
   align-items: center;
 }
 #header .container .content .logo #logo-img {
-  max-width: 50px;
-  height: 50px;
+  max-width: 58px;
+  height: 58px;
   margin: 12px;
 }
 #header .container .content .logo h1 {
@@ -346,7 +351,7 @@ section {
 #header .container .content .search-bar {
   display: flex;
   align-items: center;
-  max-width: 570px;
+  max-width: 550px;
   min-width: 280px;
   width: 100%;
   position: relative;
@@ -366,7 +371,7 @@ section {
   position: absolute;
   right: 0;
   top: 0;
-  width: 90px;
+  width: 70px;
   height: 50px;
   display: flex;
   align-items: center;
@@ -693,15 +698,14 @@ footer .footer-col-list .footer-col:nth-child(1) ul li:hover a {
   justify-content: center;
   align-items: flex-start;
   margin: 0;
-  padding: 0 0 0 6em;
+  padding: 0 0 0 48px;
   list-style-type: none;
 }
 #carousel .nav-links .nav-link {
-  font-size: 2rem;
-  font-family: Lora, serif;
+  font-size: 28px;
   line-height: 2;
   text-decoration: none;
-  color: #7f8c8d;
+  color: #7a7a7a;
   transition: 0.3s;
 }
 #carousel .nav-links .nav-link:hover {
@@ -1362,6 +1366,49 @@ form#contact .form-control[type=select] select {
   border-radius: 8px;
 }
 
+@media all and (max-width: 992px) {
+  #contact {
+    padding-top: 195.5px;
+  }
+  #contact .contact-content {
+    max-width: 500px;
+    margin: 0 auto;
+    display: block;
+  }
+  #contact .contact-content .contact-intro {
+    display: none;
+  }
+}
+@media all and (max-width: 768px) {
+  #contact {
+    padding: 32px 0px 0px 0px;
+  }
+  #contact .contact-content .contact-form .form-title {
+    text-align: center;
+  }
+  #contact .contact-content .contact-form .form-title h1 {
+    font-size: 32px;
+  }
+  #contact .contact-content .contact-form form#contact .form-control[type=radio] {
+    flex-direction: column;
+    gap: 8px 0px;
+  }
+  #contact .contact-content .contact-form form#contact .form-control[type=radio] .control-radio #ContactFormNewsLetter {
+    width: -moz-max-content;
+    width: max-content;
+  }
+  #contact .contact-content .contact-form form#contact .form-control[type=checkbox] {
+    flex-direction: column;
+    gap: 8px 0px;
+  }
+  #contact .contact-content .contact-form form#contact .form-control[type=checkbox] .control-checkbox #ContactFormContactRef {
+    width: -moz-max-content;
+    width: max-content;
+  }
+  #contact .contact-content .contact-form form#contact .form-control[type=select] {
+    flex-wrap: wrap;
+  }
+}
 #products {
   padding: 231.5px 0px 84px 0px;
   min-height: calc(100vh - 370px);

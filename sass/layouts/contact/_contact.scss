@@ -86,3 +86,59 @@ form#contact {
     }
   }
 }
+
+@media all and (max-width: 992px) {
+  #contact {
+    padding-top: calc(147.5px + 48px);
+    .contact-content {
+      max-width: 500px;
+      margin: 0 auto;
+      display: block;
+      .contact-intro {
+        display: none;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  #contact {
+    padding: $pd-8 0px 0px 0px;
+    .contact-content {
+      .contact-form {
+        .form-title {
+          text-align: center;
+          h1 {
+            font-size: 32px;
+          }
+        }
+        form#contact {
+          .form-control {
+            &[type="radio"] {
+              flex-direction: column;
+              gap: $g-2 0px;
+              .control-radio {
+                #ContactFormNewsLetter {
+                  width: max-content;
+                }
+              }
+            }
+            &[type="checkbox"] {
+              flex-direction: column;
+              gap: $g-2 0px;
+              .control-checkbox {
+                #ContactFormContactRef {
+                  width: max-content;
+                }
+              }
+            }
+
+            &[type="select"] {
+              flex-wrap: wrap;
+            }
+          }
+        }
+      }
+    }
+  }
+}

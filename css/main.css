@@ -1423,6 +1423,9 @@ form#contact .form-control[type=select] select {
   border-radius: 4px;
   border: 8px solid #f44244;
 }
+#products .layout .side-bar .bar-list .bar-item {
+  text-align: left;
+}
 #products .layout .side-bar .bar-list .bar-item button.category-toggle {
   cursor: pointer;
   border-radius: 4px;
@@ -1434,6 +1437,7 @@ form#contact .form-control[type=select] select {
   justify-content: space-between;
   color: #ffffff;
   transition: all 0.15s;
+  text-align: left;
 }
 #products .layout .side-bar .bar-list .bar-item button.category-toggle i.fa-chevron-down {
   transition: all 0.5s;
@@ -1485,6 +1489,51 @@ form#contact .form-control[type=select] select {
   grid-template-columns: repeat(3, 1fr);
 }
 
+@media all and (max-width: 992px) {
+  #products .layout .side-bar {
+    min-width: 230px;
+  }
+  #products .layout .side-bar .bar-list .bar-item {
+    text-align: left;
+  }
+  #products .layout .side-bar .bar-list .bar-item button.category-toggle {
+    padding: 8px 12px;
+  }
+  #products .layout .side-bar .bar-list .bar-item .sub-category .sub-item {
+    padding: 8px 20px;
+  }
+  #products .layout .products-col .product-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media all and (max-width: 768px) {
+  #products {
+    padding: 32px 0px 0px 0px;
+  }
+}
+@media all and (max-width: 768px) {
+  #products .layout {
+    display: flex;
+    flex-direction: column;
+    gap: 16px 0px;
+  }
+  #products .layout .products-col h1.category-title {
+    font-size: 24px;
+  }
+}
+@media all and (max-width: 420px) {
+  #products .layout {
+    display: flex;
+    flex-direction: column;
+    gap: 16px 0px;
+  }
+  #products .layout .products-col h1.category-title {
+    font-size: 24px;
+  }
+  #products .layout .products-col .product-list {
+    grid-template-columns: 1fr;
+  }
+}
 .splide.service .splide__arrow {
   align-items: center;
   background: transparent;

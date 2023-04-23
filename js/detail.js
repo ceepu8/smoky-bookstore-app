@@ -17,6 +17,17 @@ const findBook = (id) => {
 
 function renderBook(book) {
   const html = `
+   <div class="breadcrumb">
+          <span class="breadcrumb-item"><a href="./index.html">Home</a> /</span>
+          <span class="breadcrumb-item active"
+            ><a href="./category.html">Category /</a></span
+          >
+           <span class="breadcrumb-item active"
+            ><a href="./detail.html?id=${book.id}" class="active">${
+    book.name
+  }</a></span
+          >
+    </div>
     <div class="book-cols">
       <div class="book-image">
         <div class="image-wrapper">

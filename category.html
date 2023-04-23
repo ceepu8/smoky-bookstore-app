@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Category</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <div class="content">
+          <a href="./index.html" class="logo">
+            <img src="./assets/logo.png" id="logo-img" />
+            <h1>MyBookstore</h1>
+          </a>
+          <div class="search-bar">
+            <form>
+              <div class="form-control">
+                <input
+                  type="text"
+                  placeholder="Search for..."
+                  class="form-control"
+                  id="headerSearchInput"
+                />
+              </div>
+            </form>
+            <button class="search-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <div class="navigation">
+            <div class="shopping">
+              <span class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-number">0</span>
+              </span>
+              <p class="price">0.00$</p>
+            </div>
+            <div class="settings">
+              <i class="fa-solid fa-gear"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="line-break"></div>
+      <div class="menu py-2">
+        <nav>
+          <ul>
+            <li>
+              <a href="./index.html">Home</a>
+            </li>
+            <li>
+              <a href="./contact.html">Contact</a>
+            </li>
+            <li>
+              <a href="./category.html" class="active">Category</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="products">
+      <div class="container">
+        <div class="layout">
+          <div class="side-bar">
+            <div class="bar-list">
+              <div class="bar-item business-bar">
+                <button class="category-toggle">
+                  <h2 class="category-title">Business</h2>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="sub-category"></div>
+              </div>
+              <div class="bar-item fiction-bar">
+                <button class="category-toggle">
+                  <h2 class="category-title">Fiction</h2>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+                <div class="sub-category"></div>
+              </div>
+              <div class="bar-item development-bar">
+                <button class="category-toggle">
+                  <h2 class="category-title">Personal Development</h2>
+                  <i class="fa-solid fa-chevron-up"></i>
+                </button>
+                <div class="sub-category">
+                  <button class="sub-item active">Psychology</button>
+                  <button class="sub-item">Personal Finance</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="products-col">
+            <h1 class="category-title title">Psychology</h1>
+            <div class="product-list">
+              <div class="card-item group">
+                <a href="./detail.html?id=32"> </a>
+                <div class="card-header">
+                  <a href="./detail.html?id=32">
+                    <img
+                      src="https://m.media-amazon.com/images/I/61fdrEuPJwL._AC_UF1000,1000_QL80_.jpg"
+                      alt="book"
+                    />
+                  </a>
+                  <div class="card-settings">
+                    <a href="./detail.html?id=32"> </a>
+                    <div class="setting-list">
+                      <a href="./detail.html?id=32"> </a
+                      ><a href="#" class="setting-item"
+                        ><i class="fas fa-search"></i
+                      ></a>
+                      <a href="#" class="setting-item"
+                        ><i class="fa-solid fa-heart"></i
+                      ></a>
+                      <a href="#" class="setting-item"
+                        ><i class="fa-solid fa-cart-shopping"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h1 class="book-name line-clamp-1">
+                    Thinking, Fast and Slow
+                  </h1>
+                  <p class="book-price">$18.00</p>
+                  <div class="rating-stars"></div>
+                </div>
+              </div>
+
+              <div class="card-item group">
+                <a href="./detail.html?id=33"> </a>
+                <div class="card-header">
+                  <a href="./detail.html?id=33">
+                    <img
+                      src="https://m.media-amazon.com/images/I/61nTspM+BYL.jpg"
+                      alt="book"
+                    />
+                  </a>
+                  <div class="card-settings">
+                    <a href="./detail.html?id=33"> </a>
+                    <div class="setting-list">
+                      <a href="./detail.html?id=33"> </a
+                      ><a href="#" class="setting-item"
+                        ><i class="fas fa-search"></i
+                      ></a>
+                      <a href="#" class="setting-item"
+                        ><i class="fa-solid fa-heart"></i
+                      ></a>
+                      <a href="#" class="setting-item"
+                        ><i class="fa-solid fa-cart-shopping"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h1 class="book-name line-clamp-1">
+                    Man's Search for Meaning
+                  </h1>
+                  <p class="book-price">$12.00</p>
+                  <div class="rating-stars"></div>
+                </div>
+              </div>
+
+              <div class="card-item group">
+                <a href="./detail.html?id=34"> </a>
+                <div class="card-header">
+                  <a href="./detail.html?id=34">
+                    <img
+                      src="https://bizweb.dktcdn.net/100/326/228/products/thepowerofhabitcharlesduhigg.jpg?v=1540289753220"
+                      alt="book"
+                    />
+                  </a>
+                  <div class="card-settings">
+                    <a href="./detail.html?id=34"> </a>
+                    <div class="setting-list">
+                      <a href="./detail.html?id=34"> </a
+                      ><a href="#" class="setting-item"
+                        ><i class="fas fa-search"></i
+                      ></a>
+                      <a href="#" class="setting-item"
+                        ><i class="fa-solid fa-heart"></i
+                      ></a>
+                      <a href="#" class="setting-item"
+                        ><i class="fa-solid fa-cart-shopping"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h1 class="book-name line-clamp-1">The Power of Habit</h1>
+                  <p class="book-price">$16.00</p>
+                  <div class="rating-stars"></div>
+                </div>
+              </div>
+
+              <div class="card-item group">
+                <a href="./detail.html?id=35"> </a>
+                <div class="card-header">
+                  <a href="./detail.html?id=35">
+                    <img
+                      src="https://salt.tikicdn.com/cache/w1200/media/catalog/product/4/1/41m0n7iicsl-_sx323_bo1-204-203-200_.u547.d20160923.t110004.704018.jpg"
+                      alt="book"
+                    />
+                  </a>
+                  <div class="card-settings">
+                    <a href="./detail.html?id=35"> </a>
+                    <div class="setting-list">
+                      <a href="./detail.html?id=35"> </a
+                      ><a href="#" class="setting-item"
+                        ><i class="fas fa-search"></i
+                      ></a>
+                      <a href="#" class="setting-item"
+                        ><i class="fa-solid fa-heart"></i
+                      ></a>
+                      <a href="#" class="setting-item"
+                        ><i class="fa-solid fa-cart-shopping"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h1 class="book-name line-clamp-1">
+                    Quiet: The Power of Introverts in a World That Can't Stop
+                    Talking
+                  </h1>
+                  <p class="book-price">$14.00</p>
+                  <div class="rating-stars"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-col-list">
+          <div class="footer-col">
+            <h2 class="col-title">About Info</h2>
+            <p class="col-text-info">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
+              sint totam autem. Qui aut esse nobis libero quaerat commodi
+              consequuntur velit ratione asperiores? Eaque, eveniet. Soluta
+              accusantium eos dolores. Adipisci!
+            </p>
+            <ul>
+              <li>
+                <i data-feather="map-pin"></i>
+                <span>Address: A Street, HCM City</span>
+              </li>
+              <li>
+                <i data-feather="mail"></i>
+                <a href="mailto:uyencao@gmail.com"
+                  >Email: <span>uyencao@gmail.com</span></a
+                >
+              </li>
+              <li>
+                <i data-feather="phone"></i>
+                <a href="tel:(+84) 909748777"
+                  >Phone: <span>(+84) 909748777</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h2 class="col-title">Information</h2>
+            <ul>
+              <li>
+                <a href="#">Sign in</a>
+              </li>
+              <li>
+                <a href="#">View Cart</a>
+              </li>
+              <li>
+                <a href="#">My Wishlist</a>
+              </li>
+              <li>
+                <a href="#">Track My Order</a>
+              </li>
+              <li>
+                <a href="#">Help</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h2 class="col-title">Info Links</h2>
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">Shop</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+              <li>
+                <a href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h2 class="col-title">Support Area</h2>
+            <ul>
+              <li>
+                <a href="#">Hello & Contact</a>
+              </li>
+              <li>
+                <a href="#">Shipping & Task</a>
+              </li>
+              <li>
+                <a href="#">Return Policy</a>
+              </li>
+              <li>
+                <a href="#">Affiliates</a>
+              </li>
+              <li>
+                <a href="#">Legal Notice</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

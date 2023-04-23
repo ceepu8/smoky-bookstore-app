@@ -28,11 +28,12 @@
 form#contact {
   height: fit-content;
   padding: 24px;
-  border: 1px solid $bright-solid-gray;
+  border: 1px solid $philippine-silver;
   gap: 16px 0;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  border-radius: 4px;
 
   .form-control {
     width: 100%;
@@ -46,7 +47,7 @@ form#contact {
     input[type="email"],
     input[type="phone"],
     textarea {
-      border: 1px solid $bright-solid-gray;
+      border: 1px solid $philippine-silver;
       padding: 16px;
       border-radius: 8px;
     }
@@ -78,7 +79,7 @@ form#contact {
       gap: 0 16px;
       select {
         flex: 1;
-        border: 1px solid $bright-solid-gray;
+        border: 1px solid $philippine-silver;
         padding: 16px;
         border-radius: 8px;
       }

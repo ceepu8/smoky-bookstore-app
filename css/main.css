@@ -544,7 +544,7 @@ footer .footer-col-list .footer-col:nth-child(1) ul li:hover a {
 }
 
 .slider-js__view {
-  width: 1272px;
+  width: 1280px;
   height: 250px;
   background: white;
   margin: auto;
@@ -605,9 +605,13 @@ footer .footer-col-list .footer-col:nth-child(1) ul li:hover a {
   transform: translateX(0px);
   list-style: none;
   height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 8px;
 }
 .slider-product-list__item {
-  width: 250px;
+  width: 256px;
   height: 250px;
   display: inline-block;
 }

@@ -19,8 +19,8 @@ function carouselize(carousel) {
   //Count all the products
   [].forEach.call(products, function (product) {
     productAmount++;
-    productListWidth += 254;
-    productList.style.width = productListWidth + "px";
+    productListWidth += 256;
+    productList.style.maxWidth = productListWidth + "px";
   });
 
   carouselNext.onclick = function () {
@@ -40,6 +40,6 @@ function carouselize(carousel) {
   // Move the carousels product-list
   function moveProductList() {
     productList.style.transform =
-      "translateX(-" + 250 * productListSteps + "px)";
+      "translateX(-" + 256 * productListSteps + "px)";
   }
 }

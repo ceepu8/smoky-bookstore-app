@@ -9,6 +9,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
       .logo {
         display: flex;
         justify-content: center;
@@ -27,6 +28,7 @@
         display: flex;
         align-items: center;
         max-width: 570px;
+        min-width: 280px;
         width: 100%;
         position: relative;
         form {
@@ -67,7 +69,6 @@
         display: flex;
         align-items: center;
         gap: 0 24px;
-
         color: $raisin-black;
         .shopping {
           display: flex;
@@ -101,37 +102,75 @@
       }
     }
   }
+}
 
-  .menu {
-    padding: $pd-6;
-    nav {
-      ul {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0 $g-8;
-        li {
-          a {
-            position: relative;
-            &::after {
-              content: "";
-              width: 0;
-              height: 2px;
-              background-color: $secondary;
-              position: absolute;
-              bottom: -8px;
-              left: 0;
-              transition: all 0.15s;
-            }
-            &.active::after {
-              width: 100%;
-            }
+.menu {
+  padding: $pd-6;
+  nav {
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0 $g-8;
+      li {
+        a {
+          position: relative;
+          &::after {
+            content: "";
+            width: 0;
+            height: 2px;
+            background-color: $secondary;
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            transition: all 0.15s;
           }
-          &:hover a::after {
+          &.active::after {
             width: 100%;
           }
         }
+        &:hover a::after {
+          width: 100%;
+        }
       }
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+}
+
+@media all and (max-width: 576px) {
+  #header {
+    position: unset;
+    .container {
+      .content {
+        justify-content: center;
+        padding-bottom: $pd-4;
+        .logo {
+          h1 {
+            font-size: 18px;
+          }
+        }
+        .search-bar {
+          form {
+            #headerSearchInput {
+              height: 38px;
+            }
+          }
+          .search-icon {
+            width: 40px;
+            height: 40px;
+          }
+        }
+        .navigation {
+          display: none;
+        }
+      }
+    }
+
+    .menu {
+      padding: $pd-6;
     }
   }
 }

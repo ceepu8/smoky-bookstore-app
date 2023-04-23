@@ -55,3 +55,20 @@
     }
   }
 }
+
+@media all and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media all and (max-width: 576px) {
+  #blog {
+    .content {
+      .card-list {
+        display: block;
+      }
+    }
+  }
+}

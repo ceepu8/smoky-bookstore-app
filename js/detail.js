@@ -71,7 +71,9 @@ function renderBook(book) {
           <button><i class="fa-solid fa-minus"></i></button>
         </div>
 
-        <button class="primary-button size-lg max-w-fit">Add to cart</button>
+        <div class="add-to-cart">
+              <button class="primary-button size-lg">Add to cart</button>
+        </div>
 
 
         <div class="sharing-social-media">

@@ -130,10 +130,8 @@ function renderRelatedProds(payload, genres) {
                 </div>
             </div>
             <div class="card-content">
-                <h1 class="text-xl font-medium line-clamp-1">${book.name}</h1>
-                <p class="text-lg text-red-600 font-medium">$${book.price.toFixed(
-                  2
-                )}</p>
+                <h1 class="book-name line-clamp-1">${book.name}</h1>
+                <p class="book-price">$${book.price.toFixed(2)}</p>
                 <div class="rating-stars">
                     ${ratingHtml}
                 </div>

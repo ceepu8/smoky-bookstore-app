@@ -269,7 +269,7 @@ section {
   }
   .product-list .card-item .card-header img {
     max-height: 200px;
-    max-width: 125px;
+    max-width: 150px;
   }
   .product-list .card-item .card-content {
     flex: 1;
@@ -300,7 +300,7 @@ section {
     padding: 8px 12px;
     background-color: transparent;
     color: #7a7a7a;
-    border-radius: 58px 12pxpx;
+    border-radius: 58px 12px;
     font-size: 14px;
     border: 1px solid #7a7a7a;
   }
@@ -313,7 +313,7 @@ section {
     border: 1px solid #f44244;
   }
 }
-@media all and (max-width: 350px) {
+@media all and (max-width: 420px) {
   .product-list {
     display: block;
   }

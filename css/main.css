@@ -328,7 +328,6 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
 }
 #header .container .content .logo {
   display: flex;
@@ -442,12 +441,15 @@ section {
   width: 100%;
 }
 
-@media all and (max-width: 576px) {
+@media all and (max-width: 768px) {
   #header {
     position: unset;
   }
   #header .container .content {
+    display: flex;
     justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
     padding-bottom: 16px;
   }
   #header .container .content .logo h1 {
@@ -508,6 +510,11 @@ footer .footer-col-list .footer-col:nth-child(1) ul li:hover a {
   text-decoration: none;
 }
 
+@media all and (max-width: 768px) {
+  footer .footer-col-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 @media all and (max-width: 576px) {
   footer .footer-col-list {
     display: block;
@@ -718,6 +725,26 @@ footer .footer-col-list .footer-col:nth-child(1) ul li:hover a {
   font-size: 42px;
 }
 
+@media all and (max-width: 992px) {
+  #carousel .slides {
+    top: 243.5px;
+  }
+  #carousel .slides .slide-item .slide-content img {
+    max-width: 200px;
+  }
+  #carousel .slides .slide-item .slide-content .book-info h2 {
+    font-size: 28px;
+  }
+  #carousel .slides .slide-item .slide-content .book-info .book-author {
+    font-size: 20px;
+  }
+  #carousel .nav-links {
+    padding-left: 16px;
+  }
+  #carousel .nav-links .nav-link {
+    font-size: 24px;
+  }
+}
 @media all and (max-width: 768px) {
   #carousel {
     padding: 0;
@@ -733,6 +760,7 @@ footer .footer-col-list .footer-col:nth-child(1) ul li:hover a {
   }
   #carousel .mobile-carousel {
     display: block;
+    height: 400px;
   }
 }
 .slider-js__view {

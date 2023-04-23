@@ -9,7 +9,6 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      flex-wrap: wrap;
       .logo {
         display: flex;
         justify-content: center;
@@ -138,14 +137,14 @@
 }
 
 @media all and (max-width: 768px) {
-}
-
-@media all and (max-width: 576px) {
   #header {
     position: unset;
     .container {
       .content {
+        display: flex;
         justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
         padding-bottom: $pd-4;
         .logo {
           h1 {

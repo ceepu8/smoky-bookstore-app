@@ -100,6 +100,36 @@
     }
   }
 }
+
+@media all and (max-width: 992px) {
+  #carousel {
+    .slides {
+      top: calc(147.5px + 84px + 12px);
+      .slide-item {
+        .slide-content {
+          img {
+            max-width: 200px;
+          }
+          .book-info {
+            h2 {
+              font-size: 28px;
+            }
+            .book-author {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    .nav-links {
+      padding-left: $pd-4;
+      .nav-link {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
 @media all and (max-width: 768px) {
   #carousel {
     padding: 0;
@@ -118,6 +148,7 @@
 
     .mobile-carousel {
       display: block;
+      height: 400px;
     }
   }
 }

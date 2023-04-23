@@ -1185,5 +1185,181 @@
                 "rating": 4
             }
         ]
+    },
+    {
+        "id": 41,
+        "name": "The Self-Sufficient Life and How to Live It",
+        "author": "John Seymour",
+        "price": 25,
+        "image": [
+            "https://m.media-amazon.com/images/I/91pi1WNuLnL._AC_UF1000,1000_QL80_.jpg"
+        ],
+        "rating": 4.6,
+        "description": "A comprehensive guide to living off the land and achieving self-sufficiency.",
+        "released_date": "01/01/2003",
+        "status": "latest",
+        "genre": [
+            "Self Sufficiency"
+        ],
+        "comments": [
+            {
+                "name": "Sarah",
+                "comment": "This book covers everything you need to know about living off the grid and becoming self-sufficient. Highly recommend!",
+                "rating": 5
+            },
+            {
+                "name": "Tom",
+                "comment": "I'm just getting started on my journey to self-sufficiency, and this book has been an invaluable resource so far!",
+                "rating": 4
+            }
+        ]
+    },
+    {
+        "id": 42,
+        "name": "The Joy of Less",
+        "author": "Francine Jay",
+        "price": 15,
+        "image": [
+            "https://m.media-amazon.com/images/I/71kfH1wjNjL._AC_UF1000,1000_QL80_.jpg"
+        ],
+        "rating": 4.4,
+        "description": "A guide to simplifying your life and finding happiness through minimalism.",
+        "released_date": "04/08/2010",
+        "status": "feature",
+        "genre": [
+            "Self Sufficiency",
+            "Minimalism",
+            "Self-Help"
+        ],
+        "comments": [
+            {
+                "name": "Emma",
+                "comment": "This book helped me get rid of so much clutter and start living a more meaningful life.",
+                "rating": 5
+            },
+            {
+                "name": "Mike",
+                "comment": "As someone who was always buying things I didn't need, this book really opened my eyes to the benefits of minimalism.",
+                "rating": 4
+            }
+        ]
+    },
+    {
+        "id": 43,
+        "name": "The Urban Homestead",
+        "author": "Kelly Coyne and Erik Knutzen",
+        "price": 20,
+        "image": [
+            "https://m.media-amazon.com/images/I/71QH7HHBAJL._AC_UF1000,1000_QL80_.jpg"
+        ],
+        "rating": 4.2,
+        "description": "A guide to living a self-sufficient lifestyle in the city.",
+        "released_date": "03/23/2010",
+        "status": "bestseller",
+        "genre": [
+            "Self Sufficiency",
+            "Urban Farming"
+        ],
+        "comments": [
+            {
+                "name": "Alex",
+                "comment": "I always thought you needed lots of land to be self-sufficient, but this book showed me it's possible even in the city!",
+                "rating": 5
+            },
+            {
+                "name": "Sophie",
+                "comment": "This book has so many great tips and ideas for sustainable living in an urban environment. Highly recommend!",
+                "rating": 4
+            }
+        ]
+    },
+    {
+        "id": 44,
+        "name": "The Emperor's New Clothes: An All-Star Retelling of the Classic Fairy Tale",
+        "author": "Brian Freeman",
+        "price": 18,
+        "image": [
+            "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1438943827i/275696.jpg"
+        ],
+        "rating": 4.2,
+        "description": "A children's book adaptation of the classic tale, with themes of truth, honesty, and accountability.",
+        "released_date": "10/15/2019",
+        "status": "feature",
+        "genre": [
+            "Law",
+            "Children's Books"
+        ],
+        "comments": [
+            {
+                "name": "Sarah",
+                "comment": "This book is a great way to introduce kids to the idea of telling the truth and taking responsibility for your actions.",
+                "rating": 5
+            },
+            {
+                "name": "Tom",
+                "comment": "I love sharing this book with my children. It's not just entertaining, it's also educational!",
+                "rating": 4
+            }
+        ]
+    },
+    {
+        "id": 45,
+        "name": "The New Jim Crow: Mass Incarceration in the Age of Colorblindness",
+        "author": "Michelle Alexander",
+        "price": 22,
+        "image": [
+            "https://m.media-amazon.com/images/I/51hVN9LrJhL.jpg"
+        ],
+        "rating": 4.8,
+        "description": "A nonfiction book that explores the racial biases and systemic injustices of the American criminal justice system.",
+        "released_date": "01/16/2010",
+        "status": "latest",
+        "genre": [
+            "Law",
+            "Criminal Justice",
+            "Race Relations"
+        ],
+        "comments": [
+            {
+                "name": "Alex",
+                "comment": "This book completely changed the way I think about our criminal justice system. A must-read for anyone interested in law or social justice.",
+                "rating": 5
+            },
+            {
+                "name": "Sophie",
+                "comment": "This book is so well-researched and thought-provoking. It made me see the problems with our current approach to crime and punishment in a whole new light.",
+                "rating": 4
+            }
+        ]
+    },
+    {
+        "id": 46,
+        "name": "The Brethren",
+        "author": "John Grisham",
+        "price": 10,
+        "image": [
+            "https://m.media-amazon.com/images/I/81yEtiKxbwL.jpg"
+        ],
+        "rating": 4.5,
+        "description": "A legal thriller that follows the lives of three former judges who run a scam from their prison cell, and the young lawyer who gets caught up in their web.",
+        "released_date": "02/01/2000",
+        "status": "bestseller",
+        "genre": [
+            "Law",
+            "Legal Thriller",
+            "Mystery"
+        ],
+        "comments": [
+            {
+                "name": "James",
+                "comment": "This book had me on the edge of my seat the whole time. It's a great balance of legal drama and suspense!",
+                "rating": 5
+            },
+            {
+                "name": "Emily",
+                "comment": "I love how John Grisham can take complex legal concepts and make them accessible to the reader. This book is no exception.",
+                "rating": 4
+            }
+        ]
     }
 ]

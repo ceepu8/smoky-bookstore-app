@@ -14,20 +14,35 @@ function renderBookByCategory(categoryName) {
   });
 
   const html = books.reduce((result, book) => {
+    const rating = Array.from({ length: book.rating.toFixed() }, () => 1);
+    const leftRating = Array.from(
+      { length: 5 - book.rating.toFixed() },
+      () => 1
+    );
+    const ratingHtml = `
+                          ${rating
+                            .map(
+                              () =>
+                                `<i class="fa-solid fa-star" style="color: #e5cd34;"></i>`
+                            )
+                            .join("")}
+                          ${leftRating
+                            .map(() => `<i class="fa-solid fa-star"></i>`)
+                            .join("")}
+                    `;
     return (
       result +
       `
              <div class="card-item">
                 <a href="./detail.html?id=${book.id}"></a>
                 <div class="card-header">
-                  <a href="./detail.html?id=32">
+                  <a href="./detail.html?id=${book.id}">
                     <img
                       src="${book.image}"
                       alt="book"
                     />
                   </a>
                   <div class="card-settings">
-                    <a href="./detail.html?id=${book.id}"> </a>
                     <div class="setting-list">
                       <a href="./detail.html?id=${book.id}"> </a
                       ><a href="#" class="setting-item"
@@ -46,15 +61,17 @@ function renderBookByCategory(categoryName) {
                   <h1 class="book-name line-clamp-1">
                     ${book.name}
                   </h1>
-                  <p class="book-price">$${book.price.toFixed(1)}</p>
-                  <div class="rating-stars"></div>
+                  <p class="book-price">$${book.price.toFixed(2)}</p>
+                  <div class="rating-stars">${ratingHtml}</div>
                 </div>
               </div>
               `
     );
   }, "");
 
-  document.querySelector(".category-title.title").innerHTML = categoryName;
+  console.log(categoryName.replace(/ /g, " "));
+  document.querySelector(".category-title.title").innerHTML =
+    categoryName.replace(/-/g, " ");
   document.querySelector(".category-title.title").style.textTransform =
     "capitalize";
   document.querySelector("#products .products-col .product-list").innerHTML =

@@ -106,6 +106,40 @@
                     "rating": 4.3
                 }
             ]
+        },
+        "law": {
+            "id": 3,
+            "name": "Law",
+            "value": "law",
+            "books": [
+                {
+                    "id": 44,
+                    "name": "The Emperor's New Clothes: An All-Star Retelling of the Classic Fairy Tale",
+                    "price": 18,
+                    "image": [
+                        "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1438943827i/275696.jpg"
+                    ],
+                    "rating": 4.2
+                },
+                {
+                    "id": 45,
+                    "name": "The New Jim Crow: Mass Incarceration in the Age of Colorblindness",
+                    "price": 22,
+                    "image": [
+                        "https://m.media-amazon.com/images/I/51hVN9LrJhL.jpg"
+                    ],
+                    "rating": 4.8
+                },
+                {
+                    "id": 46,
+                    "name": "The Brethren",
+                    "price": 10,
+                    "image": [
+                        "https://m.media-amazon.com/images/I/81yEtiKxbwL.jpg"
+                    ],
+                    "rating": 4.5
+                }
+            ]
         }
     }
 }

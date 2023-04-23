@@ -179,12 +179,21 @@ section {
 
 .size-lg {
   padding: $pd-4 $pd-8;
+  font-size: 18px;
+}
+
+.size-md {
+  padding: $pd-3 $pd-6;
+  font-size: 16px;
+}
+
+.max-w-fit {
+  max-width: fit-content;
 }
 
 .primary-button {
   color: $white;
   background-color: $primary;
-  padding: 12px 16px;
   border-radius: 8px;
   cursor: pointer;
   width: 100%;

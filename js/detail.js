@@ -17,10 +17,10 @@ const findBook = (id) => {
 
 function renderBook(book) {
   const html = `
-    <div class="grid grid-cols-2 gap-x-12">
-      <div>
-        <div class="border border-solid border-gray-200 py-12 mb-4">
-          <figure class='zoom mx-auto max-w-[300px]' style="background: url(${
+    <div class="book-cols">
+      <div class="book-image">
+        <div class="image-wrapper">
+          <figure class='zoom' style="background: url(${
             book.image
           })" onmousemove="zoom(event)" ontouchmove="zoom(event)">
               <a data-fancybox href="${book.image[0]}">
@@ -28,50 +28,46 @@ function renderBook(book) {
               </a>
           </figure>
         </div>
-        <div class="grid grid-cols-4 gap-x-4 slide-books">
+        <ul class="related-image">
               ${
                 book.image.length > 0 &&
                 book.image
                   .map(
                     (img) => `
-                        <li class="splide__slide">
-                          <div class="p-6 border border-solid border-gray-200">
-                            <img src="${img}" alt="sub-image" class="max-h-[100px] m-auto"/>
+                        <li class="image-item">
+                          <div class="item-wrapper">
+                            <img src="${img}" alt="sub-image"/>
                           </div>
                         </li>
                       `
                   )
                   .join("")
               }
-        </div>
+        </ul>
       </div>
-      <div class="flex flex-col gap-y-4">
-        <span class="rounded-full py-2 px-4 bg-[#f44244] text-white max-w-fit text-xs leading-1">${
-          book.status
-        }</span>
-        <h1 class="text-3xl font-medium">${book.name}</h1>
-        <h2 class="text-2xl">Author: ${book.author}</h2>
-        <p class="text-2xl text-red-500">$${book.price.toFixed(2)}</p>
+      <div class="book-details">
+        <span class="status-badge">${book.status}</span>
+        <h1 class="book-name">${book.name}</h1>
+        <h2 class="book-author">Author: ${book.author}</h2>
+        <p class="book-price">$${book.price.toFixed(2)}</p>
         <p>Genre: ${book.genre.join(", ")}</p>
         <p>Description: ${book.description}</p>
         <p>Released Date: ${book.released_date}</p>
 
-        <div class="flex gap-x-4 items-center border border-solid border-gray-200 max-w-fit px-4 py-2 rounded-full text-gray-600">
+        <div class="quantity-btns">
           <button><i class="fa-solid fa-plus"></i></button>
           <span>1</span>
           <button><i class="fa-solid fa-minus"></i></button>
         </div>
 
-        <div>
-          <button class="uppercase px-6 py-3 bg-[#f44244] text-white font-medium ">Add to cart</button>
-        </div> 
+        <button class="primary-button size-lg max-w-fit">Add to cart</button>
 
 
-        <div class="flex items-center gap-x-4">
+        <div class="sharing-social-media">
           <span>Share:</span>
-          <div class="w-8 h-8 flex items-center rounded text-white justify-center bg-blue-600"><i class="fa-brands text-lg fa-facebook-f"></i></div>
-          <div class="w-8 h-8 flex items-center rounded text-white justify-center bg-blue-400"><i class="fa-brands text-lg fa-twitter"></i></div>
-          <div class="w-8 h-8 flex items-center rounded text-white justify-center bg-pink-500"><i class="fa-brands text-lg fa-instagram"></i></div>
+          <div class="icon-wrapper facebook"><i class="fa-brands fa-facebook-f"></i></div>
+          <div class="icon-wrapper twitter"><i class="fa-brands fa-twitter"></i></div>
+          <div class="icon-wrapper instagram"><i class="fa-brands fa-instagram"></i></div>
         </div>
       </div>
     </div>
@@ -104,23 +100,6 @@ function renderRelatedProds(payload, genres) {
           .join("")}
         ${leftRating.map(() => `<i class="fa-solid fa-star"></i>`).join("")}
     `;
-
-    // <section class="slider-wrapper">
-    //   <button class="slide-arrow" id="slide-arrow-prev">
-    //     &#8249;
-    //   </button>
-
-    //   <button class="slide-arrow" id="slide-arrow-next">
-    //     &#8250;
-    //   </button>
-
-    //   <ul class="slides-container" id="slides-container">
-    //     <li class="slide"></li>
-    //     <li class="slide"></li>
-    //     <li class="slide"></li>
-    //     <li class="slide"></li>
-    //   </ul>
-    // </section>;
 
     return (
       result +

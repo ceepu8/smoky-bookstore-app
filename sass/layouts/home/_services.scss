@@ -2,9 +2,9 @@ $carousel-height: 250px;
 $carousel-preview-width: 70;
 
 $products-amount-visible: 5;
-$product-width: 250px;
+$product-width: 256px;
 
-$carousel-width: calc((250px * 5) + 22px);
+$carousel-width: calc((256px * 5));
 
 .slider-js {
   &__view {
@@ -77,8 +77,13 @@ $carousel-width: calc((250px * 5) + 22px);
   list-style: none;
   height: $carousel-height;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 $g-2;
+
   &__item {
-    width: 250px;
+    width: 256px;
     height: $carousel-height;
     display: inline-block;
   }

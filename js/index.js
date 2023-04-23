@@ -123,6 +123,25 @@ function renderEachCategory(category, subCategorySelected) {
               <div class="product-list">
                 ${category.subCategory[subCategorySelected].books
                   .map((book) => {
+                    const rating = Array.from(
+                      { length: book.rating.toFixed() },
+                      () => 1
+                    );
+                    const leftRating = Array.from(
+                      { length: 5 - book.rating.toFixed() },
+                      () => 1
+                    );
+                    const ratingHtml = `
+                          ${rating
+                            .map(
+                              () =>
+                                `<i class="fa-solid fa-star" style="color: #e5cd34;"></i>`
+                            )
+                            .join("")}
+                          ${leftRating
+                            .map(() => `<i class="fa-solid fa-star"></i>`)
+                            .join("")}
+                    `;
                     return `
                      <div class="card-item group">
                       <a href="./detail.html?id=${book.id}">
@@ -144,6 +163,7 @@ function renderEachCategory(category, subCategorySelected) {
                                 2
                               )}</p>
                               <div class="rating-stars">
+                              ${ratingHtml}
                               </div>
                           </div>       
                         </a>

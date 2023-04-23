@@ -98,6 +98,40 @@
                     "rating": 4.7
                 }
             ]
+        },
+        "self-sufficiency": {
+            "id": 2,
+            "name": "Self Sufficiency",
+            "value": "self-sufficiency",
+            "books": [
+                {
+                    "id": 41,
+                    "name": "The Self-Sufficient Life and How to Live It",
+                    "price": 25,
+                    "image": [
+                        "https://m.media-amazon.com/images/I/91pi1WNuLnL._AC_UF1000,1000_QL80_.jpg"
+                    ],
+                    "rating": 4.6
+                },
+                {
+                    "id": 42,
+                    "name": "The Joy of Less",
+                    "price": 15,
+                    "image": [
+                        "https://m.media-amazon.com/images/I/71kfH1wjNjL._AC_UF1000,1000_QL80_.jpg"
+                    ],
+                    "rating": 4.4
+                },
+                {
+                    "id": 43,
+                    "name": "The Urban Homestead",
+                    "price": 20,
+                    "image": [
+                        "https://m.media-amazon.com/images/I/71QH7HHBAJL._AC_UF1000,1000_QL80_.jpg"
+                    ],
+                    "rating": 4.2
+                }
+            ]
         }
     }
 }

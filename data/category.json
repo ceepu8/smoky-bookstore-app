@@ -15,7 +15,8 @@
         "value": "business-management",
         "subCategory": [
             "Economics",
-            "Finance & Accounting"
+            "Finance & Accounting",
+            "Law"
         ]
     },
     {
@@ -24,7 +25,8 @@
         "value": "personal-development",
         "subCategory": [
             "Psychology",
-            "Personal Finance"
+            "Personal Finance",
+            "Self Sufficiency"
         ]
     }
 ]

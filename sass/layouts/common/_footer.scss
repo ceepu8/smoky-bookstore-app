@@ -44,3 +44,19 @@ footer {
     }
   }
 }
+
+@media all and (max-width: 768px) {
+  footer {
+    .footer-col-list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media all and (max-width: 576px) {
+  footer {
+    .footer-col-list {
+      display: block;
+    }
+  }
+}

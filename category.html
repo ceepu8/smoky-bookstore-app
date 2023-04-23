@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Category</title>
+    <link rel="icon" href="./assets/logo.png" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -74,171 +75,81 @@
         <div class="layout">
           <div class="side-bar">
             <div class="bar-list">
-              <div class="bar-item business-bar">
-                <button class="category-toggle">
+              <div class="bar-item business">
+                <button class="category-toggle" onClick="dropMenu('business')">
                   <h2 class="category-title">Business</h2>
-                  <i class="fa-solid fa-chevron-down"></i>
+                  <i class="fa-solid fa-chevron-down active"></i>
                 </button>
-                <div class="sub-category"></div>
+                <div class="sub-category business active">
+                  <button
+                    class="sub-item economics active"
+                    onClick="selectCategory('economics')"
+                  >
+                    Economics
+                  </button>
+                  <button
+                    class="sub-item finance-and-accounting"
+                    onClick="selectCategory('finance-and-accounting')"
+                  >
+                    Finance & Accounting
+                  </button>
+                </div>
               </div>
-              <div class="bar-item fiction-bar">
-                <button class="category-toggle">
+              <div class="bar-item fiction">
+                <button class="category-toggle" onClick="dropMenu('fiction')">
                   <h2 class="category-title">Fiction</h2>
                   <i class="fa-solid fa-chevron-down"></i>
                 </button>
 
-                <div class="sub-category"></div>
+                <div class="sub-category fiction">
+                  <button
+                    class="sub-item literary-fiction"
+                    onClick="selectCategory('literary-fiction')"
+                  >
+                    Literary Fiction
+                  </button>
+                  <button
+                    class="sub-item science-fiction"
+                    onClick="selectCategory('science-fiction')"
+                  >
+                    Science Fiction
+                  </button>
+                  <button
+                    class="sub-item historical-fiction"
+                    onClick="selectCategory('historical-fiction')"
+                  >
+                    Historical Fiction
+                  </button>
+                </div>
               </div>
-              <div class="bar-item development-bar">
-                <button class="category-toggle">
+              <div class="bar-item development">
+                <button
+                  class="category-toggle"
+                  onClick="dropMenu('development')"
+                >
                   <h2 class="category-title">Personal Development</h2>
-                  <i class="fa-solid fa-chevron-up"></i>
+                  <i class="fa-solid fa-chevron-down"></i>
                 </button>
-                <div class="sub-category">
-                  <button class="sub-item active">Psychology</button>
-                  <button class="sub-item">Personal Finance</button>
+                <div class="sub-category development">
+                  <button
+                    class="sub-item psychology"
+                    onClick="selectCategory('psychology')"
+                  >
+                    Psychology
+                  </button>
+                  <button
+                    class="sub-item personal-finance"
+                    onClick="selectCategory('personal-finance')"
+                  >
+                    Personal Finance
+                  </button>
                 </div>
               </div>
             </div>
           </div>
           <div class="products-col">
-            <h1 class="category-title title">Psychology</h1>
-            <div class="product-list">
-              <div class="card-item group">
-                <a href="./detail.html?id=32"> </a>
-                <div class="card-header">
-                  <a href="./detail.html?id=32">
-                    <img
-                      src="https://m.media-amazon.com/images/I/61fdrEuPJwL._AC_UF1000,1000_QL80_.jpg"
-                      alt="book"
-                    />
-                  </a>
-                  <div class="card-settings">
-                    <a href="./detail.html?id=32"> </a>
-                    <div class="setting-list">
-                      <a href="./detail.html?id=32"> </a
-                      ><a href="#" class="setting-item"
-                        ><i class="fas fa-search"></i
-                      ></a>
-                      <a href="#" class="setting-item"
-                        ><i class="fa-solid fa-heart"></i
-                      ></a>
-                      <a href="#" class="setting-item"
-                        ><i class="fa-solid fa-cart-shopping"></i
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-content">
-                  <h1 class="book-name line-clamp-1">
-                    Thinking, Fast and Slow
-                  </h1>
-                  <p class="book-price">$18.00</p>
-                  <div class="rating-stars"></div>
-                </div>
-              </div>
-
-              <div class="card-item group">
-                <a href="./detail.html?id=33"> </a>
-                <div class="card-header">
-                  <a href="./detail.html?id=33">
-                    <img
-                      src="https://m.media-amazon.com/images/I/61nTspM+BYL.jpg"
-                      alt="book"
-                    />
-                  </a>
-                  <div class="card-settings">
-                    <a href="./detail.html?id=33"> </a>
-                    <div class="setting-list">
-                      <a href="./detail.html?id=33"> </a
-                      ><a href="#" class="setting-item"
-                        ><i class="fas fa-search"></i
-                      ></a>
-                      <a href="#" class="setting-item"
-                        ><i class="fa-solid fa-heart"></i
-                      ></a>
-                      <a href="#" class="setting-item"
-                        ><i class="fa-solid fa-cart-shopping"></i
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-content">
-                  <h1 class="book-name line-clamp-1">
-                    Man's Search for Meaning
-                  </h1>
-                  <p class="book-price">$12.00</p>
-                  <div class="rating-stars"></div>
-                </div>
-              </div>
-
-              <div class="card-item group">
-                <a href="./detail.html?id=34"> </a>
-                <div class="card-header">
-                  <a href="./detail.html?id=34">
-                    <img
-                      src="https://bizweb.dktcdn.net/100/326/228/products/thepowerofhabitcharlesduhigg.jpg?v=1540289753220"
-                      alt="book"
-                    />
-                  </a>
-                  <div class="card-settings">
-                    <a href="./detail.html?id=34"> </a>
-                    <div class="setting-list">
-                      <a href="./detail.html?id=34"> </a
-                      ><a href="#" class="setting-item"
-                        ><i class="fas fa-search"></i
-                      ></a>
-                      <a href="#" class="setting-item"
-                        ><i class="fa-solid fa-heart"></i
-                      ></a>
-                      <a href="#" class="setting-item"
-                        ><i class="fa-solid fa-cart-shopping"></i
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-content">
-                  <h1 class="book-name line-clamp-1">The Power of Habit</h1>
-                  <p class="book-price">$16.00</p>
-                  <div class="rating-stars"></div>
-                </div>
-              </div>
-
-              <div class="card-item group">
-                <a href="./detail.html?id=35"> </a>
-                <div class="card-header">
-                  <a href="./detail.html?id=35">
-                    <img
-                      src="https://salt.tikicdn.com/cache/w1200/media/catalog/product/4/1/41m0n7iicsl-_sx323_bo1-204-203-200_.u547.d20160923.t110004.704018.jpg"
-                      alt="book"
-                    />
-                  </a>
-                  <div class="card-settings">
-                    <a href="./detail.html?id=35"> </a>
-                    <div class="setting-list">
-                      <a href="./detail.html?id=35"> </a
-                      ><a href="#" class="setting-item"
-                        ><i class="fas fa-search"></i
-                      ></a>
-                      <a href="#" class="setting-item"
-                        ><i class="fa-solid fa-heart"></i
-                      ></a>
-                      <a href="#" class="setting-item"
-                        ><i class="fa-solid fa-cart-shopping"></i
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-content">
-                  <h1 class="book-name line-clamp-1">
-                    Quiet: The Power of Introverts in a World That Can't Stop
-                    Talking
-                  </h1>
-                  <p class="book-price">$14.00</p>
-                  <div class="rating-stars"></div>
-                </div>
-              </div>
-            </div>
+            <h1 class="category-title title"></h1>
+            <div class="product-list"></div>
           </div>
         </div>
       </div>
@@ -337,5 +248,6 @@
         </div>
       </div>
     </footer>
+    <script type="module" src="./js/category.js"></script>
   </body>
 </html>

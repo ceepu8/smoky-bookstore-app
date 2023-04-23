@@ -12,7 +12,7 @@
         "released_date": "10/04/1925",
         "status": "feature",
         "genre": [
-            "Fiction",
+            "Literary Fiction",
             "Drama"
         ],
         "comments": [
@@ -46,7 +46,7 @@
         "released_date": "08/06/1949",
         "status": "feature",
         "genre": [
-            "Fiction",
+            "Science Fiction",
             "Science"
         ],
         "comments": [
@@ -80,7 +80,7 @@
         "released_date": "16/07/1951",
         "status": "bestseller",
         "genre": [
-            "Fiction",
+            "Literary Fiction",
             "Bildungsroman"
         ],
         "comments": [
@@ -114,7 +114,7 @@
         "released_date": "11/07/1960",
         "status": "feature",
         "genre": [
-            "Fiction",
+            "Literary Fiction",
             "Southern Gothic"
         ],
         "comments": [
@@ -148,7 +148,7 @@
         "released_date": "12/06/1994",
         "status": "bestseller",
         "genre": [
-            "Fiction"
+            "Science Fiction"
         ],
         "comments": [
             {
@@ -181,7 +181,7 @@
         "released_date": "20/06/1987",
         "status": "bestseller",
         "genre": [
-            "Fiction",
+            "Literary Fiction",
             "Romance"
         ],
         "comments": [
@@ -215,7 +215,7 @@
         "released_date": "21/09/1937",
         "status": "latest",
         "genre": [
-            "Fiction",
+            "Science Fiction",
             "Fantasy"
         ],
         "comments": [
@@ -249,7 +249,7 @@
         "released_date": "12/01/2002",
         "status": "feature",
         "genre": [
-            "Fiction"
+            "Literary Fiction"
         ],
         "comments": [
             {
@@ -284,7 +284,7 @@
         "released_date": "30/05/1967",
         "status": "latest",
         "genre": [
-            "Fiction"
+            "Historical Fiction"
         ],
         "comments": [
             {
@@ -317,7 +317,7 @@
         "released_date": "11/05/2004",
         "status": "latest",
         "genre": [
-            "Fiction"
+            "Literary Fiction"
         ],
         "comments": [
             {
@@ -350,7 +350,7 @@
         "released_date": "17/02/1994",
         "status": "bestseller",
         "genre": [
-            "Fiction"
+            "Science Fiction"
         ],
         "comments": [
             {
@@ -383,7 +383,7 @@
         "released_date": "09/01/1999",
         "status": "latest",
         "genre": [
-            "Fiction",
+            "Literary Fiction",
             "Romance"
         ],
         "comments": [
@@ -417,7 +417,7 @@
         "released_date": "01/09/1987",
         "status": "latest",
         "genre": [
-            "Fiction",
+            "Literary Fiction",
             "Romance"
         ],
         "comments": [
@@ -484,7 +484,7 @@
         "released_date": "29/05/2009",
         "status": "feature",
         "genre": [
-            "Science fiction",
+            "Science Fiction",
             "Suspense"
         ],
         "comments": [
@@ -518,7 +518,7 @@
         "released_date": "12/04/2013",
         "status": "latest",
         "genre": [
-            "Literary fiction",
+            "Literary Fiction",
             "Coming-of-age"
         ],
         "comments": [
@@ -552,7 +552,7 @@
         "released_date": "28/01/1813",
         "status": "feature",
         "genre": [
-            "Fiction"
+            "Historical Fiction"
         ],
         "comments": [
             {
@@ -580,7 +580,7 @@
         "released_date": "04/06/2013",
         "status": "bestseller",
         "genre": [
-            "Historical fiction",
+            "Historical Fiction",
             "Sports"
         ],
         "comments": [
@@ -609,7 +609,7 @@
         "released_date": "09/06/1992",
         "status": "feature",
         "genre": [
-            "Historical fiction",
+            "Historical Fiction",
             "Military"
         ],
         "comments": [
@@ -638,7 +638,7 @@
         "released_date": "15/06/1982",
         "status": "feature",
         "genre": [
-            "History",
+            "Historical Fiction",
             "American Revolution"
         ],
         "comments": [

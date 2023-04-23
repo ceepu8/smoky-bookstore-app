@@ -55,10 +55,10 @@
                 }
             ]
         },
-        "finance-accounting": {
+        "finance-and-accounting": {
             "id": 2,
             "name": "Finance & Accounting",
-            "value": "finance-accounting",
+            "value": "finance-and-accounting",
             "books": [
                 {
                     "id": 27,

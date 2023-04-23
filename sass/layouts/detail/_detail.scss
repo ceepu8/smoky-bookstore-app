@@ -38,6 +38,71 @@
         display: flex;
         flex-direction: column;
         gap: $g-4 0px;
+        .status-badge {
+          border-radius: 50px;
+          padding: $pd-2 $pd-4;
+          background-color: $primary;
+          color: $white;
+          max-width: fit-content;
+          font-size: 14px;
+        }
+        .book-name {
+          font-size: 32px;
+          font-weight: 500;
+        }
+        .book-author {
+          font-size: 24px;
+          font-weight: 500;
+        }
+        .book-price {
+          font-size: 32px;
+          color: $primary;
+        }
+
+        .quantity-btns {
+          display: flex;
+          align-items: center;
+          border: 1px solid $philippine-silver;
+          gap: 0 $g-4;
+          border-radius: 50px;
+          max-width: fit-content;
+          padding: $pd-4;
+          button {
+            cursor: pointer;
+            background-color: transparent;
+            &:hover {
+              color: $gray;
+            }
+            i {
+              font-size: 18px;
+            }
+          }
+        }
+
+        .sharing-social-media {
+          display: flex;
+          align-items: center;
+          gap: 0 $g-4;
+          .icon-wrapper {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            color: $white;
+            &.instagram {
+              background-color: $royal-fuchsia;
+            }
+            &.facebook {
+              background-color: $blue-solid;
+            }
+
+            &.twitter {
+              background-color: $cerulean-solid;
+            }
+          }
+        }
       }
     }
   }

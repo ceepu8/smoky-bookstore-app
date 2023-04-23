@@ -79,6 +79,12 @@
           }
         }
 
+        .add-to-cart {
+          button {
+            max-width: max-content;
+          }
+        }
+
         .sharing-social-media {
           display: flex;
           align-items: center;
@@ -124,4 +130,63 @@ figure.zoom img {
   transition: opacity 0.5s;
   display: block;
   width: 100%;
+}
+
+@media all and (max-width: 768px) {
+  #detail {
+    padding: $pd-8 0px 0px 0px;
+    min-height: auto;
+    #book-infor {
+      .book-cols {
+        gap: 0px $g-4;
+        .book-image {
+          .image-wrapper {
+            figure {
+              max-width: 250px;
+            }
+          }
+        }
+        .book-details {
+          .book-name {
+            font-size: 24px;
+          }
+          .book-author {
+            font-size: 18px;
+          }
+          .book-price {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 576px) {
+  #detail {
+    padding: $pd-8 0px 0px 0px;
+    min-height: auto;
+    #book-infor {
+      .book-cols {
+        display: flex;
+        flex-direction: column;
+        gap: $g-4 0px;
+        .book-image {
+          .image-wrapper {
+            padding: $pd-4 0px;
+            figure {
+              max-width: 250px;
+            }
+          }
+        }
+        .book-details {
+          .add-to-cart {
+            button {
+              max-width: none;
+            }
+          }
+        }
+      }
+    }
+  }
 }

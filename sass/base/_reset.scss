@@ -274,8 +274,8 @@ section {
       .card-header {
         padding: $pd-12;
         img {
-          height: 160px;
-          max-width: 100px;
+          max-height: 200px;
+          max-width: 125px;
         }
       }
       .card-content {
@@ -325,7 +325,7 @@ section {
   }
 }
 
-@media all and (max-width: 300px) {
+@media all and (max-width: 350px) {
   .product-list {
     display: block;
     .card-item {

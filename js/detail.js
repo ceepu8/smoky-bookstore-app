@@ -34,7 +34,7 @@ function renderBook(book) {
           <figure class='zoom' style="background: url(${
             book.image
           })" onmousemove="zoom(event)" ontouchmove="zoom(event)">
-              <a data-fancybox href="${book.image[0]}">
+              <a href="${book.image[0]}">
                 <img src="${book.image[0]}" alt="book image"/>
               </a>
           </figure>

@@ -134,9 +134,6 @@ section {
         visibility: hidden;
         opacity: 0;
         .setting-list {
-          display: flex;
-          justify-content: center;
-          gap: 0 24px;
           padding: 18px;
           transition: all 0.15s;
           .setting-item {
@@ -144,6 +141,7 @@ section {
               transition: all 0.15s;
               font-size: 22px;
             }
+
             &:hover {
               i {
                 color: $primary;
@@ -311,7 +309,7 @@ section {
       padding: 8px 12px;
       background-color: transparent;
       color: $gray;
-      border-radius: 58px 12px;
+      border-radius: 50px;
       font-size: 14px;
       border: 1px solid $gray;
     }

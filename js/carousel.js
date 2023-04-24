@@ -1,3 +1,11 @@
+//  RMIT University Vietnam
+//   Course: COSC2430 Web Programming
+//   Semester: 2023A
+//   Assessment: Assignment 1
+//   Author: Cao Ngoc Phuong Uyen
+//   ID: s3919659
+//   Acknowledgement: in the document
+
 let navLinks = document.querySelectorAll("#carousel .nav-link");
 let slides = document.querySelectorAll("#carousel .slides .slide-item");
 let overlays = document.querySelectorAll("#carousel .bar");

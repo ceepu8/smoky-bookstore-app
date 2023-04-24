@@ -1,3 +1,11 @@
+//  RMIT University Vietnam
+//   Course: COSC2430 Web Programming
+//   Semester: 2023A
+//   Assessment: Assignment 1
+//   Author: Cao Ngoc Phuong Uyen
+//   ID: s3919659
+//   Acknowledgement: in the document
+
 (function () {
   var carousels = document.querySelectorAll(".js-product-carousel");
 

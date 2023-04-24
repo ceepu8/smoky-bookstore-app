@@ -1,3 +1,11 @@
+//  RMIT University Vietnam
+//   Course: COSC2430 Web Programming
+//   Semester: 2023A
+//   Assessment: Assignment 1
+//   Author: Cao Ngoc Phuong Uyen
+//   ID: s3919659
+//   Acknowledgement: in the document
+
 import BOOK_LIST from "../data/book-list.json" assert { type: "json" };
 import BUSINESS_BOOKS from "../data/business-books.json" assert { type: "json" };
 import DEVELOPMENT_BOOKS from "../data/personal-development.json" assert { type: "json" };

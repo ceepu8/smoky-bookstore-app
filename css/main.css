@@ -138,9 +138,6 @@ section {
   opacity: 0;
 }
 .product-list .card-item .card-header .card-settings .setting-list {
-  display: flex;
-  justify-content: center;
-  gap: 0 24px;
   padding: 18px;
   transition: all 0.15s;
 }
@@ -906,6 +903,32 @@ footer .footer-col-list .footer-col:nth-child(1) ul li:hover a {
   font-weight: 500;
 }
 
+#intro-video {
+  margin-top: 32px;
+}
+#intro-video .content .intro-title {
+  margin-bottom: 32px;
+}
+#intro-video .content iframe {
+  width: 100%;
+  height: 650px;
+}
+
+@media all and (max-width: 992px) {
+  #intro-video {
+    margin-top: 24px;
+  }
+  #intro-video .content iframe {
+    width: 100%;
+    height: 450px;
+  }
+}
+@media all and (max-width: 576px) {
+  #intro-video .content iframe {
+    width: 100%;
+    height: 300px;
+  }
+}
 #collections {
   margin-bottom: 84px;
 }

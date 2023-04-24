@@ -121,7 +121,7 @@ section {
   max-height: 240px;
   height: 240px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin: auto;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
@@ -141,11 +141,23 @@ section {
   padding: 18px;
   transition: all 0.15s;
 }
-.product-list .card-item .card-header .card-settings .setting-list .setting-item i {
+.product-list
+  .card-item
+  .card-header
+  .card-settings
+  .setting-list
+  .setting-item
+  i {
   transition: all 0.15s;
   font-size: 22px;
 }
-.product-list .card-item .card-header .card-settings .setting-list .setting-item:hover i {
+.product-list
+  .card-item
+  .card-header
+  .card-settings
+  .setting-list
+  .setting-item:hover
+  i {
   color: #f44244;
 }
 .product-list .card-item .card-content {
@@ -321,7 +333,9 @@ section {
 }
 #header {
   background-color: #ffffff;
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+    rgba(0, 0, 0, 0.07) 0px 16px 16px;
   position: fixed;
   width: 100%;
   z-index: 9999;
@@ -940,13 +954,6 @@ footer .footer-col-list .footer-col:nth-child(1) ul li:hover a {
   gap: 32px 0;
 }
 
-#client {
-  background-image: url(../assets/client-bg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 #best-seller {
   padding-top: 147.5px;
 }
@@ -1140,12 +1147,25 @@ footer .footer-col-list .footer-col:nth-child(1) ul li:hover a {
   grid-template-columns: repeat(4, 1fr);
   gap: 0 16px;
 }
-#detail #book-infor .book-cols .book-image .related-image .image-item .item-wrapper {
+#detail
+  #book-infor
+  .book-cols
+  .book-image
+  .related-image
+  .image-item
+  .item-wrapper {
   padding: 24px;
   border: 1px solid #e5e7eb;
   text-align: center;
 }
-#detail #book-infor .book-cols .book-image .related-image .image-item .item-wrapper img {
+#detail
+  #book-infor
+  .book-cols
+  .book-image
+  .related-image
+  .image-item
+  .item-wrapper
+  img {
   max-height: 100px;
   margin: auto;
 }
@@ -1204,7 +1224,12 @@ footer .footer-col-list .footer-col:nth-child(1) ul li:hover a {
   align-items: center;
   gap: 0 16px;
 }
-#detail #book-infor .book-cols .book-details .sharing-social-media .icon-wrapper {
+#detail
+  #book-infor
+  .book-cols
+  .book-details
+  .sharing-social-media
+  .icon-wrapper {
   width: 32px;
   height: 32px;
   display: flex;
@@ -1213,13 +1238,28 @@ footer .footer-col-list .footer-col:nth-child(1) ul li:hover a {
   border-radius: 8px;
   color: #ffffff;
 }
-#detail #book-infor .book-cols .book-details .sharing-social-media .icon-wrapper.instagram {
+#detail
+  #book-infor
+  .book-cols
+  .book-details
+  .sharing-social-media
+  .icon-wrapper.instagram {
   background-color: #d6249f;
 }
-#detail #book-infor .book-cols .book-details .sharing-social-media .icon-wrapper.facebook {
+#detail
+  #book-infor
+  .book-cols
+  .book-details
+  .sharing-social-media
+  .icon-wrapper.facebook {
   background-color: #3b5998;
 }
-#detail #book-infor .book-cols .book-details .sharing-social-media .icon-wrapper.twitter {
+#detail
+  #book-infor
+  .book-cols
+  .book-details
+  .sharing-social-media
+  .icon-wrapper.twitter {
   background-color: #00acee;
 }
 
@@ -1343,43 +1383,47 @@ form#contact .form-control label {
   font-weight: 500;
   white-space: nowrap;
 }
-form#contact .form-control input[type=text],
-form#contact .form-control input[type=email],
-form#contact .form-control input[type=phone],
+form#contact .form-control input[type="text"],
+form#contact .form-control input[type="email"],
+form#contact .form-control input[type="phone"],
 form#contact .form-control textarea {
   border: 1px solid #b8b8b8;
   padding: 16px;
   border-radius: 8px;
 }
-form#contact .form-control[type=radio], form#contact .form-control[type=checkbox] {
+form#contact .form-control[type="radio"],
+form#contact .form-control[type="checkbox"] {
   display: flex;
   gap: 0 32px;
 }
-form#contact .form-control[type=radio] legend, form#contact .form-control[type=checkbox] legend {
+form#contact .form-control[type="radio"] legend,
+form#contact .form-control[type="checkbox"] legend {
   font-size: 18px;
   font-weight: 500;
   white-space: nowrap;
 }
-form#contact .form-control[type=radio] .control-radio,
-form#contact .form-control[type=radio] .control-checkbox, form#contact .form-control[type=checkbox] .control-radio,
-form#contact .form-control[type=checkbox] .control-checkbox {
+form#contact .form-control[type="radio"] .control-radio,
+form#contact .form-control[type="radio"] .control-checkbox,
+form#contact .form-control[type="checkbox"] .control-radio,
+form#contact .form-control[type="checkbox"] .control-checkbox {
   display: flex;
   align-items: center;
   gap: 0 12px;
 }
-form#contact .form-control[type=radio] .control-radio label,
-form#contact .form-control[type=radio] .control-checkbox label, form#contact .form-control[type=checkbox] .control-radio label,
-form#contact .form-control[type=checkbox] .control-checkbox label {
+form#contact .form-control[type="radio"] .control-radio label,
+form#contact .form-control[type="radio"] .control-checkbox label,
+form#contact .form-control[type="checkbox"] .control-radio label,
+form#contact .form-control[type="checkbox"] .control-checkbox label {
   font-size: 16px;
   font-weight: 400;
   white-space: nowrap;
 }
-form#contact .form-control[type=select] {
+form#contact .form-control[type="select"] {
   display: flex;
   align-items: center;
   gap: 0 16px;
 }
-form#contact .form-control[type=select] select {
+form#contact .form-control[type="select"] select {
   flex: 1;
   border: 1px solid #b8b8b8;
   padding: 16px;
@@ -1409,23 +1453,47 @@ form#contact .form-control[type=select] select {
   #contact .contact-content .contact-form .form-title h1 {
     font-size: 32px;
   }
-  #contact .contact-content .contact-form form#contact .form-control[type=radio] {
+  #contact
+    .contact-content
+    .contact-form
+    form#contact
+    .form-control[type="radio"] {
     flex-direction: column;
     gap: 8px 0px;
   }
-  #contact .contact-content .contact-form form#contact .form-control[type=radio] .control-radio #ContactFormNewsLetter {
+  #contact
+    .contact-content
+    .contact-form
+    form#contact
+    .form-control[type="radio"]
+    .control-radio
+    #ContactFormNewsLetter {
     width: -moz-max-content;
     width: max-content;
   }
-  #contact .contact-content .contact-form form#contact .form-control[type=checkbox] {
+  #contact
+    .contact-content
+    .contact-form
+    form#contact
+    .form-control[type="checkbox"] {
     flex-direction: column;
     gap: 8px 0px;
   }
-  #contact .contact-content .contact-form form#contact .form-control[type=checkbox] .control-checkbox #ContactFormContactRef {
+  #contact
+    .contact-content
+    .contact-form
+    form#contact
+    .form-control[type="checkbox"]
+    .control-checkbox
+    #ContactFormContactRef {
     width: -moz-max-content;
     width: max-content;
   }
-  #contact .contact-content .contact-form form#contact .form-control[type=select] {
+  #contact
+    .contact-content
+    .contact-form
+    form#contact
+    .form-control[type="select"] {
     flex-wrap: wrap;
   }
 }
@@ -1459,13 +1527,31 @@ form#contact .form-control[type=select] select {
   transition: all 0.15s;
   text-align: left;
 }
-#products .layout .side-bar .bar-list .bar-item button.category-toggle i.fa-chevron-down {
+#products
+  .layout
+  .side-bar
+  .bar-list
+  .bar-item
+  button.category-toggle
+  i.fa-chevron-down {
   transition: all 0.5s;
 }
-#products .layout .side-bar .bar-list .bar-item button.category-toggle i.fa-chevron-down.active {
+#products
+  .layout
+  .side-bar
+  .bar-list
+  .bar-item
+  button.category-toggle
+  i.fa-chevron-down.active {
   transform: rotate(-180deg);
 }
-#products .layout .side-bar .bar-list .bar-item button.category-toggle .category-title {
+#products
+  .layout
+  .side-bar
+  .bar-list
+  .bar-item
+  button.category-toggle
+  .category-title {
   font-size: 18px;
   font-weight: 500;
 }
@@ -1599,49 +1685,3 @@ form#contact .form-control[type=select] select {
   visibility: visible;
   transform: translateY(-50%) translateX(0px);
 }
-
-#client .splide .splide__arrow {
-  align-items: center;
-  background: transparent;
-  border: 0;
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  opacity: 0.7;
-  padding: 0;
-  position: absolute;
-  top: 50%;
-  width: 40px;
-  height: 40px;
-  z-index: 1;
-  background-color: #ffffff;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.25s;
-}
-#client .splide .splide__arrow svg {
-  fill: none;
-  height: 24px;
-  width: 24px;
-  color: #212121;
-}
-#client .splide .splide__arrow:hover {
-  background-color: #f44244;
-}
-#client .splide .splide__arrow:hover svg {
-  color: #ffffff;
-}
-#client .splide .splide__arrow--prev {
-  left: -48px;
-  transform: translateY(-50%) translateX(20px);
-}
-#client .splide .splide__arrow--next {
-  right: -48px;
-  transform: translateY(-50%) translateX(-20px);
-}
-#client .splide:hover .splide__arrow {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(-50%) translateX(0px);
-}/*# sourceMappingURL=main.css.map */

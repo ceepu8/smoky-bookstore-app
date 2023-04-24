@@ -32,7 +32,8 @@
                     "price": 8,
                     "image": [
                         "https://m.media-amazon.com/images/I/61fgOuZfBGL._AC_UF1000,1000_QL80_.jpg"
-                    ]
+                    ],
+                    "rating": 4.8
                 },
                 {
                     "id": 2,
